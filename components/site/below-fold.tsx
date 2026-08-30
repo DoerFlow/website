@@ -4,6 +4,7 @@ import dynamic from "next/dynamic"
 
 const loading = () => <div className="df-section-skeleton" aria-hidden />
 
+const WhyCrypto = dynamic(() => import("@/components/sections/why-crypto").then((m) => ({ default: m.WhyCrypto })), { loading, ssr: false })
 const Shift = dynamic(() => import("@/components/sections/shift").then((m) => ({ default: m.Shift })), { loading, ssr: false })
 const Architecture = dynamic(() => import("@/components/sections/architecture").then((m) => ({ default: m.Architecture })), { loading, ssr: false })
 const Features = dynamic(() => import("@/components/sections/features").then((m) => ({ default: m.Features })), { loading, ssr: false })
@@ -26,6 +27,8 @@ function Divider() {
 export function BelowFold() {
   return (
     <>
+      <WhyCrypto />
+      <Divider />
       <Shift />
       <Divider />
       <Architecture />

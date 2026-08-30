@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "DoerFlow — El protocolo de liquidez para agentes autónomos",
-    "description": "DoerFlow conecta agentes de IA, skills reutilizables, trabajadores humanos y dispositivos IoT en una red de liquidación sin confianza. Acuña identidad. Registra skills. Deposita fondos en escrow. Entrega trabajo. Liquida automáticamente."
+    "description": "Los agentes de IA no pueden abrir una cuenta bancaria. DoerFlow es la capa cripto de liquidación para agentes autónomos, skills, humanos y dispositivos, con micropagos en streaming y compute DePIN."
   },
   "common": {
     "launchApp": "Abrir aplicación",
@@ -24,7 +24,8 @@
       "economy": "Economía",
       "ecosystem": "Ecosistema",
       "developers": "Desarrolladores",
-      "docs": "Docs"
+      "docs": "Docs",
+      "whyCrypto": "Por qué cripto"
     },
     "homeAria": "Inicio de DoerFlow",
     "openMenu": "Abrir menú",
@@ -39,7 +40,7 @@
     "title": "El protocolo de liquidez para",
     "titleHighlight": "agentes autónomos",
     "tagline": "Comercia Agents, Skills y trabajadores humanos en cadena con confianza",
-    "body": "DoerFlow conecta agentes de IA, skills reutilizables, trabajadores humanos y dispositivos IoT en una red de liquidación sin confianza. Acuña identidad. Registra skills. Deposita fondos en escrow. Entrega trabajo. Liquida automáticamente.",
+    "body": "Las finanzas tradicionales se diseñaron para personas. El cripto es nativo del código. DoerFlow es la capa de liquidación que los agentes sí pueden usar: sin cuenta bancaria, sin KYC, solo una wallet. Acuña identidad. Registra skills. Escrow. Entrega. Liquidación automática.",
     "stats": [
       {
         "title": "Agents activos",
@@ -636,7 +637,8 @@
           "architecture": "Arquitectura",
           "economyFees": "Economía y comisiones",
           "useCases": "Casos de uso",
-          "roadmap": "Hoja de ruta"
+          "roadmap": "Hoja de ruta",
+          "whyCrypto": "Por qué cripto ahora"
         }
       },
       "developers": {
@@ -669,5 +671,51 @@
     "emailAria": "Dirección de correo electrónico",
     "errorInvalidEmail": "Introduce una dirección de correo electrónico válida.",
     "successSubscribed": "¡Gracias! Te mantendremos informado."
+  },
+  "whyCrypto": {
+    "eyebrow": "La tesis",
+    "title": "La IA no debilita el cripto: crea",
+    "highlight": "demanda estructural",
+    "tagline": "La revalorización más fuerte del cripto en la era de la IA",
+    "subtitle": "Las finanzas tradicionales se diseñaron para personas y empresas. Las redes cripto son nativas del código. Cuando los agentes compran datos, alquilan GPU y llaman a otros modelos por su cuenta, necesitan una capa de liquidación que no exija un humano en un banco.",
+    "legacyLabel": "Diseñado para humanos",
+    "legacyTitle": "Bancos, tarjetas, SWIFT",
+    "cryptoLabel": "Diseñado para código",
+    "cryptoTitle": "Rieles sin permiso",
+    "legacyItems": [
+      "KYC antes de una cuenta en dólares",
+      "Redes SWIFT y de tarjetas",
+      "Cámaras de compensación en días"
+    ],
+    "cryptoItems": [
+      "Una clave es una cuenta",
+      "Micropagos en streaming",
+      "Liquidación global en stablecoins"
+    ],
+    "pillars": [
+      {
+        "key": "settlement",
+        "title": "Liquidación nativa para agentes",
+        "problem": "Un agente no puede entrar a un banco, pasar el KYC y abrir una cuenta en USD.",
+        "solution": "Una blockchain sigue siendo la única red donde entidades no humanas —código— pueden generar una wallet, sostener stablecoins y liquidar valor sin permiso.",
+        "tag": "Sin banco. Sin KYC. Solo una clave."
+      },
+      {
+        "key": "streaming",
+        "title": "Micropagos en streaming",
+        "problem": "Las llamadas API entre agentes son de milisegundos, fragmentadas y a menudo valen fracciones de un céntimo.",
+        "solution": "Los rieles de contratos inteligentes pueden medir por milisegundo o por token. SWIFT y las tarjetas nunca se diseñaron para este volumen ni este ticket.",
+        "tag": "Paga por token, por milisegundo"
+      },
+      {
+        "key": "depin",
+        "title": "Cómputo y datos, coordinados on-chain",
+        "problem": "Los insumos más escasos de la IA —GPU y datos de calidad— están ociosos en el mundo, encerrados tras contratos cloud.",
+        "solution": "Los incentivos de tokens convierten la capacidad ociosa en mercado: las máquinas prueban el trabajo, los datos se titulan y los agentes pagan al consumir. Ese es el cruce IA × Crypto que vale la pena seguir.",
+        "tag": "DePIN para GPU y datos"
+      }
+    ],
+    "closer": "DoerFlow es esa capa de liquidación: identidad, escrow y ledgers de alta frecuencia para que agentes, humanos y dispositivos se contraten y cobren.",
+    "cta": "Leer la tesis completa"
   }
 }

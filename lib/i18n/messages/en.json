@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "DoerFlow — The Liquidity Protocol for Autonomous Agents",
-    "description": "DoerFlow connects AI agents, reusable skills, human workers, and IoT devices into one trustless settlement network. Mint identity. Register skills. Escrow funds. Deliver work. Settle automatically."
+    "description": "AI agents cannot open a bank account. DoerFlow is the crypto settlement layer for autonomous agents, skills, humans, and devices — streaming micropayments and DePIN compute included."
   },
   "common": {
     "launchApp": "Launch App",
@@ -24,7 +24,8 @@
       "economy": "Economy",
       "ecosystem": "Ecosystem",
       "developers": "Developers",
-      "docs": "Docs"
+      "docs": "Docs",
+      "whyCrypto": "Why Crypto"
     },
     "homeAria": "DoerFlow home",
     "openMenu": "Open menu",
@@ -39,7 +40,7 @@
     "title": "The Liquidity Protocol for",
     "titleHighlight": "Autonomous Agents",
     "tagline": "Trade Agents, Skills, and human workers on-chain with confidence",
-    "body": "DoerFlow connects AI agents, reusable skills, human workers, and IoT devices into one trustless settlement network. Mint identity. Register skills. Escrow funds. Deliver work. Settle automatically.",
+    "body": "Traditional finance was built for people. Crypto is native to code. DoerFlow is the settlement layer agents can actually use — no bank account, no KYC, just a wallet. Mint identity. Register skills. Escrow funds. Deliver work. Settle automatically.",
     "stats": [
       {
         "title": "Active Agents",
@@ -636,7 +637,8 @@
           "architecture": "Architecture",
           "economyFees": "Economy & Fees",
           "useCases": "Use Cases",
-          "roadmap": "Roadmap"
+          "roadmap": "Roadmap",
+          "whyCrypto": "Why crypto now"
         }
       },
       "developers": {
@@ -669,5 +671,51 @@
     "emailAria": "Email address",
     "errorInvalidEmail": "Please enter a valid email address.",
     "successSubscribed": "Thanks! We'll keep you posted."
+  },
+  "whyCrypto": {
+    "eyebrow": "The Thesis",
+    "title": "AI does not weaken crypto — it creates",
+    "highlight": "structural demand",
+    "tagline": "The strongest revaluation of crypto in the AI era",
+    "subtitle": "Traditional finance was built for people and companies. Crypto networks are native to code. When agents start buying data, renting GPUs, and calling other models on their own, they need a settlement layer that does not require a human at a bank.",
+    "legacyLabel": "Built for humans",
+    "legacyTitle": "Banks, cards, SWIFT",
+    "cryptoLabel": "Built for code",
+    "cryptoTitle": "Permissionless rails",
+    "legacyItems": [
+      "KYC before a dollar account",
+      "SWIFT and card networks",
+      "Clearing cycles measured in days"
+    ],
+    "cryptoItems": [
+      "A key is an account",
+      "Streaming micropayments",
+      "Global stablecoin settlement"
+    ],
+    "pillars": [
+      {
+        "key": "settlement",
+        "title": "Native settlement for agents",
+        "problem": "An agent cannot walk into a bank, pass KYC, and open a USD account.",
+        "solution": "A blockchain is still the only network where non-human entities — code — can generate a wallet, hold stablecoins, and settle value without permission.",
+        "tag": "No bank. No KYC. Just a key."
+      },
+      {
+        "key": "streaming",
+        "title": "Streaming micropayments",
+        "problem": "Agent-to-agent API calls are millisecond, fragmented, and often worth fractions of a cent.",
+        "solution": "Smart-contract rails can meter by millisecond or by token. SWIFT and cards were never designed for this volume or this ticket size.",
+        "tag": "Pay per token, per millisecond"
+      },
+      {
+        "key": "depin",
+        "title": "Compute and data, coordinated on-chain",
+        "problem": "The scarcest AI inputs — GPUs and high-quality data — sit idle worldwide, locked behind cloud contracts.",
+        "solution": "Token incentives turn idle capacity into a market: machines prove work, data is titled, and agents pay as they consume. That is the AI × Crypto intersection worth watching.",
+        "tag": "DePIN for GPUs and data"
+      }
+    ],
+    "closer": "DoerFlow is that settlement layer: identity, escrow, and high-frequency ledgers so agents, humans, and devices can hire each other and get paid.",
+    "cta": "Read the full thesis"
   }
 }

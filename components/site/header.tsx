@@ -20,6 +20,7 @@ export function Header() {
 
   const nav = useMemo(
     () => [
+      { label: t("header.nav.whyCrypto"), href: "#why-crypto" },
       { label: t("header.nav.protocol"), href: "#protocol" },
       { label: t("header.nav.products"), href: "#products" },
       { label: t("header.nav.useCases"), href: "#use-cases" },

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "DoerFlow — Il protocollo di liquidità per agenti autonomi",
-    "description": "DoerFlow collega agenti IA, skill riutilizzabili, lavoratori umani e dispositivi IoT in un'unica rete di regolamento trustless. Conia identità. Registra skill. Deposita fondi in escrow. Consegna il lavoro. Regola automaticamente."
+    "description": "Gli agent IA non possono aprire un conto in banca. DoerFlow è il layer di settlement crypto per agent autonomi, skill, umani e dispositivi — micropagamenti in streaming e compute DePIN inclusi."
   },
   "common": {
     "launchApp": "Avvia app",
@@ -24,7 +24,8 @@
       "economy": "Economia",
       "ecosystem": "Ecosistema",
       "developers": "Sviluppatori",
-      "docs": "Docs"
+      "docs": "Docs",
+      "whyCrypto": "Perché crypto"
     },
     "homeAria": "Home DoerFlow",
     "openMenu": "Apri menu",
@@ -39,7 +40,7 @@
     "title": "Il protocollo di liquidità per",
     "titleHighlight": "agenti autonomi",
     "tagline": "Scambia Agents, Skill e lavoratori umani on-chain in sicurezza",
-    "body": "DoerFlow collega agenti IA, skill riutilizzabili, lavoratori umani e dispositivi IoT in un'unica rete di regolamento trustless. Conia identità. Registra skill. Deposita fondi in escrow. Consegna il lavoro. Regola automaticamente.",
+    "body": "La finanza tradizionale è per le persone. Il crypto è nativo per il codice. DoerFlow è il layer di settlement che gli agent possono davvero usare: niente conto bancario, niente KYC, solo un wallet. Conia identità. Registra skill. Escrow. Consegna. Settlement automatico.",
     "stats": [
       {
         "title": "Agent attivi",
@@ -636,7 +637,8 @@
           "architecture": "Architettura",
           "economyFees": "Economia e commissioni",
           "useCases": "Casi d'uso",
-          "roadmap": "Roadmap"
+          "roadmap": "Roadmap",
+          "whyCrypto": "Perché il crypto ora"
         }
       },
       "developers": {
@@ -669,5 +671,51 @@
     "emailAria": "Indirizzo email",
     "errorInvalidEmail": "Inserisci un indirizzo email valido.",
     "successSubscribed": "Grazie! Ti terremo aggiornato."
+  },
+  "whyCrypto": {
+    "eyebrow": "La tesi",
+    "title": "L’IA non indebolisce il crypto: crea",
+    "highlight": "domanda strutturale",
+    "tagline": "La rivalutazione più forte del crypto nell’era dell’IA",
+    "subtitle": "La finanza tradizionale è stata pensata per persone e imprese. Le reti crypto sono native per il codice. Quando gli agent comprano dati, affittano GPU e chiamano altri modelli da soli, serve un layer di settlement che non richieda un umano in banca.",
+    "legacyLabel": "Progettato per gli umani",
+    "legacyTitle": "Banche, carte, SWIFT",
+    "cryptoLabel": "Progettato per il codice",
+    "cryptoTitle": "Binari permissionless",
+    "legacyItems": [
+      "KYC prima di un conto in dollari",
+      "Reti SWIFT e delle carte",
+      "Clearing misurato in giorni"
+    ],
+    "cryptoItems": [
+      "Una chiave è un conto",
+      "Micropagamenti in streaming",
+      "Settlement globale in stablecoin"
+    ],
+    "pillars": [
+      {
+        "key": "settlement",
+        "title": "Settlement nativo per gli agent",
+        "problem": "Un agent non può entrare in banca, superare il KYC e aprire un conto in USD.",
+        "solution": "Una blockchain resta l’unica rete in cui entità non umane — il codice — possono generare un wallet, detenere stablecoin e regolare valore senza permesso.",
+        "tag": "Niente banca. Niente KYC. Solo una chiave."
+      },
+      {
+        "key": "streaming",
+        "title": "Micropagamenti in streaming",
+        "problem": "Le chiamate API tra agent sono al millisecondo, frammentate e spesso valgono frazioni di centesimo.",
+        "solution": "I binari degli smart contract possono misurare per millisecondo o per token. SWIFT e carte non sono mai stati pensati per questo volume o questo ticket.",
+        "tag": "Paga per token, per millisecondo"
+      },
+      {
+        "key": "depin",
+        "title": "Compute e dati, coordinati on-chain",
+        "problem": "Gli input più scarsi dell’IA — GPU e dati di qualità — restano inattivi nel mondo, chiusi dietro contratti cloud.",
+        "solution": "Gli incentivi in token trasformano la capacità inattiva in mercato: le macchine provano il lavoro, i dati ottengono titolo e gli agent pagano mentre consumano. Questo è l’incrocio IA × Crypto da seguire.",
+        "tag": "DePIN per GPU e dati"
+      }
+    ],
+    "closer": "DoerFlow è quel layer di settlement: identità, escrow e ledger ad alta frequenza così agent, umani e dispositivi possono assumersi a vicenda e venire pagati.",
+    "cta": "Leggi la tesi completa"
   }
 }

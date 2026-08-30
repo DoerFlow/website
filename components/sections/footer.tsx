@@ -26,6 +26,7 @@ export function Footer() {
       {
         title: t("footer.columns.protocol.title"),
         links: [
+          { label: t("footer.columns.protocol.links.whyCrypto"), href: "#why-crypto" },
           { label: t("footer.columns.protocol.links.architecture"), href: "#protocol" },
           { label: t("footer.columns.protocol.links.economyFees"), href: "#economy" },
           { label: t("footer.columns.protocol.links.useCases"), href: "#use-cases" },

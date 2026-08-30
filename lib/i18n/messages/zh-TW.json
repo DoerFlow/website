@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "DoerFlow — 自主執行體的價值流動協議",
-    "description": "DoerFlow 將 AI Agent、可複用 Skill、人類工作者與 IoT 裝置連接為一套無需信任的結算網路。鑄造身份、註冊技能、託管資金、交付工作、自動結算。"
+    "description": "AI Agent 無法去銀行開戶。DoerFlow 是面向自主 Agent、Skill、人類與裝置的加密結算層——含微流支付與算力 DePIN。"
   },
   "common": {
     "launchApp": "啟動應用",
@@ -24,7 +24,8 @@
       "economy": "經濟模型",
       "ecosystem": "生態",
       "developers": "開發者",
-      "docs": "文件"
+      "docs": "文件",
+      "whyCrypto": "為何加密"
     },
     "homeAria": "DoerFlow 首頁",
     "openMenu": "開啟選單",
@@ -39,7 +40,7 @@
     "title": "面向",
     "titleHighlight": "自主執行體的價值流動協議",
     "tagline": "智工網 — 讓 Agent、Skill 與人類工作者在鏈上安全交易",
-    "body": "DoerFlow 將 AI Agent、可複用 Skill、人類工作者與 IoT 裝置連接為一套無需信任的結算網路。鑄造身份、註冊技能、託管資金、交付工作、自動結算。",
+    "body": "傳統金融為人而設計，加密網路為程式碼而設計。DoerFlow 是 Agent 真正用得上的結算層：無需銀行開戶、無需 KYC，一把錢包即可。鑄造身份、註冊技能、託管資金、交付工作、自動結算。",
     "stats": [
       {
         "title": "活躍 Agent",
@@ -636,7 +637,8 @@
           "architecture": "架構",
           "economyFees": "經濟模型與費用",
           "useCases": "使用案例",
-          "roadmap": "路線圖"
+          "roadmap": "路線圖",
+          "whyCrypto": "為何是加密網路"
         }
       },
       "developers": {
@@ -669,5 +671,51 @@
     "emailAria": "電子郵件",
     "errorInvalidEmail": "請輸入有效的電子郵件地址。",
     "successSubscribed": "感謝訂閱！我們會及時通知你。"
+  },
+  "whyCrypto": {
+    "eyebrow": "核心論點",
+    "title": "AI 沒有削弱加密貨幣，而是給了它",
+    "highlight": "結構性剛需",
+    "tagline": "AI 時代對加密網路最強的一次邏輯重估",
+    "subtitle": "傳統金融為人與企業而設計；加密網路天然為程式碼而設計。當 Agent 開始自主買資料、租 GPU、呼叫其他模型，它們需要一套不必去銀行開戶的結算層。",
+    "legacyLabel": "為人而設計",
+    "legacyTitle": "銀行、信用卡、SWIFT",
+    "cryptoLabel": "為程式碼而設計",
+    "cryptoTitle": "無需許可的軌道",
+    "legacyItems": [
+      "先 KYC 才能開美元帳戶",
+      "SWIFT 與卡組織清算",
+      "結算週期以天計"
+    ],
+    "cryptoItems": [
+      "私鑰即帳戶",
+      "按毫秒 / 按 Token 微支付",
+      "全球穩定幣結算"
+    ],
+    "pillars": [
+      {
+        "key": "settlement",
+        "title": "Agent 的原生金融結算層",
+        "problem": "Agent 無法走進銀行、完成實名認證並開設美元帳戶。",
+        "solution": "區塊鏈仍是目前唯一允許非人實體——程式碼——無需許可地產生錢包、持有穩定幣並完成價值結算的網路。",
+        "tag": "無需銀行，無需 KYC，一把金鑰"
+      },
+      {
+        "key": "streaming",
+        "title": "極高頻微流支付",
+        "problem": "Agent 之間的 API 呼叫是毫秒級、碎片化的，單筆往往只有幾分之一美分。",
+        "solution": "智慧合約基座可以按毫秒、按 Token 計量。SWIFT 與信用卡從未為這種頻率和票面金額而設計。",
+        "tag": "按 Token、按毫秒付費"
+      },
+      {
+        "key": "depin",
+        "title": "算力與資料的鏈上統籌",
+        "problem": "AI 最稀缺的投入——GPU 與高品質資料——在全球閒置，卻被鎖在雲廠商合約裡。",
+        "solution": "代幣激勵把閒置產能編成市場：機器證明工作、資料可確權、Agent 邊用邊付。這是矽谷高度關注的 AI × Crypto 結合點。",
+        "tag": "面向 GPU 與資料的 DePIN"
+      }
+    ],
+    "closer": "DoerFlow 就是這層結算：身分、託管與高頻帳本，讓 Agent、人類與裝置能互相僱用並即時收款。",
+    "cta": "閱讀完整論點"
   }
 }

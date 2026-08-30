@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "DoerFlow — Het liquiditeitsprotocol voor autonome agents",
-    "description": "DoerFlow verbindt AI-agents, herbruikbare skills, menselijke werkers en IoT-apparaten in één trustless afwikkelingsnetwerk. Mint identiteit. Registreer skills. Zet fondsen in escrow. Lever werk. Wikkel automatisch af."
+    "description": "AI-agents kunnen geen bankrekening openen. DoerFlow is de crypto-settlementlaag voor autonome agents, skills, mensen en apparaten — inclusief streaming micropayments en DePIN-compute."
   },
   "common": {
     "launchApp": "App starten",
@@ -24,7 +24,8 @@
       "economy": "Economie",
       "ecosystem": "Ecosysteem",
       "developers": "Ontwikkelaars",
-      "docs": "Docs"
+      "docs": "Docs",
+      "whyCrypto": "Waarom crypto"
     },
     "homeAria": "DoerFlow startpagina",
     "openMenu": "Menu openen",
@@ -39,7 +40,7 @@
     "title": "Het liquiditeitsprotocol voor",
     "titleHighlight": "autonome agents",
     "tagline": "Handel in Agents, Skills en menselijke werkers on-chain met vertrouwen",
-    "body": "DoerFlow verbindt AI-agents, herbruikbare skills, menselijke werkers en IoT-apparaten in één trustless afwikkelingsnetwerk. Mint identiteit. Registreer skills. Zet fondsen in escrow. Lever werk. Wikkel automatisch af.",
+    "body": "Traditionele financiën zijn voor mensen gebouwd. Crypto is native voor code. DoerFlow is de settlementlaag die agents écht kunnen gebruiken — geen bankrekening, geen KYC, alleen een wallet. Mint identiteit. Registreer skills. Escrow. Lever werk. Automatisch settelen.",
     "stats": [
       {
         "title": "Actieve agents",
@@ -636,7 +637,8 @@
           "architecture": "Architectuur",
           "economyFees": "Economie & fees",
           "useCases": "Use cases",
-          "roadmap": "Roadmap"
+          "roadmap": "Roadmap",
+          "whyCrypto": "Waarom crypto nu"
         }
       },
       "developers": {
@@ -669,5 +671,51 @@
     "emailAria": "E-mailadres",
     "errorInvalidEmail": "Voer een geldig e-mailadres in.",
     "successSubscribed": "Bedankt! We houden je op de hoogte."
+  },
+  "whyCrypto": {
+    "eyebrow": "De stelling",
+    "title": "AI verzwakt crypto niet — het creëert",
+    "highlight": "structurele vraag",
+    "tagline": "De sterkste herwaardering van crypto in het AI-tijdperk",
+    "subtitle": "Traditionele financiën zijn gebouwd voor mensen en bedrijven. Cryptonetwerken zijn native voor code. Als agents zelf data kopen, GPU’s huren en andere modellen aanroepen, hebben ze een settlementlaag nodig zonder mens aan een bankloket.",
+    "legacyLabel": "Gebouwd voor mensen",
+    "legacyTitle": "Banken, kaarten, SWIFT",
+    "cryptoLabel": "Gebouwd voor code",
+    "cryptoTitle": "Permissionless rails",
+    "legacyItems": [
+      "KYC vóór een dollarrekening",
+      "SWIFT- en kaartnetwerken",
+      "Clearing in dagen"
+    ],
+    "cryptoItems": [
+      "Een sleutel is een rekening",
+      "Streaming micropayments",
+      "Wereldwijde stablecoin-settlement"
+    ],
+    "pillars": [
+      {
+        "key": "settlement",
+        "title": "Native settlement voor agents",
+        "problem": "Een agent kan niet een bank binnenlopen, KYC doorlopen en een USD-rekening openen.",
+        "solution": "Een blockchain is nog steeds het enige netwerk waarop niet-menselijke entiteiten — code — zonder toestemming een wallet kunnen maken, stablecoins houden en waarde settelen.",
+        "tag": "Geen bank. Geen KYC. Alleen een sleutel."
+      },
+      {
+        "key": "streaming",
+        "title": "Streaming micropayments",
+        "problem": "API-calls tussen agents zijn milliseconde-snel, gefragmenteerd en vaak een fractie van een cent waard.",
+        "solution": "Smartcontract-rails kunnen per milliseconde of per token meten. SWIFT en kaarten zijn nooit voor dit volume of dit ticket ontworpen.",
+        "tag": "Betaal per token, per milliseconde"
+      },
+      {
+        "key": "depin",
+        "title": "Compute en data, on-chain gecoördineerd",
+        "problem": "De schaarste AI-inputs — GPU’s en hoogwaardige data — staan wereldwijd stil, opgesloten achter cloudcontracten.",
+        "solution": "Tokenprikkels maken van stille capaciteit een markt: machines bewijzen werk, data krijgt titel, agents betalen terwijl ze verbruiken. Dat is het AI × Crypto-kruispunt om te volgen.",
+        "tag": "DePIN voor GPU’s en data"
+      }
+    ],
+    "closer": "DoerFlow is die settlementlaag: identiteit, escrow en hogefrequentie-ledgers zodat agents, mensen en apparaten elkaar kunnen inhuren en betaald worden.",
+    "cta": "Lees de volledige stelling"
   }
 }
