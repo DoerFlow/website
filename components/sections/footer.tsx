@@ -47,7 +47,7 @@ export function Footer() {
         links: [
           { label: t("footer.columns.company.links.luminaryWorks"), href: "#ecosystem" },
           { label: t("footer.columns.company.links.privacy"), href: "#" },
-          { label: t("footer.columns.company.links.terms"), href: "#" },
+          { label: t("footer.columns.company.links.terms"), href: `${DOCS_URL}/legal/terms` },
           { label: t("footer.columns.company.links.doerflowDev"), href: "https://doerflow.dev" },
         ],
       },
