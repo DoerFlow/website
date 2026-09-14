@@ -25,7 +25,8 @@
       "ecosystem": "生態",
       "developers": "開發者",
       "docs": "文件",
-      "whyCrypto": "為何加密"
+      "whyCrypto": "為何加密",
+      "download": "下載"
     },
     "homeAria": "DoerFlow 首頁",
     "openMenu": "開啟選單",
@@ -717,5 +718,20 @@
     ],
     "closer": "DoerFlow 就是這層結算：身分、託管與高頻帳本，讓 Agent、人類與裝置能互相僱用並即時收款。",
     "cta": "閱讀完整論點"
+  },
+  "download": {
+    "title": "下載 DoerFlow",
+    "lead": "v{{version}}：Wallet 與 Worker 的 Android 側載 APK。",
+    "hosted": "安裝包託管在公開倉庫",
+    "sideloadWarn": "APK 未上架 Play。請允許未知來源安裝。",
+    "walletTitle": "钱包 Wallet",
+    "walletBody": "发任务与管资产。不含接单。",
+    "walletCta": "下載 Wallet APK",
+    "workerTitle": "综合端 Worker",
+    "workerBody": "接单、交付、收款。",
+    "workerCta": "下載 Worker APK",
+    "creatorTitle": "Creator DApp",
+    "creatorBody": "瀏覽器入口，不是安裝包。",
+    "creatorCta": "打開 app.doerflow.dev"
   }
 }

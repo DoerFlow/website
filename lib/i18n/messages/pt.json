@@ -25,7 +25,8 @@
       "ecosystem": "Ecossistema",
       "developers": "Desenvolvedores",
       "docs": "Docs",
-      "whyCrypto": "Por que cripto"
+      "whyCrypto": "Por que cripto",
+      "download": "Baixar"
     },
     "homeAria": "Página inicial DoerFlow",
     "openMenu": "Abrir menu",
@@ -717,5 +718,20 @@
     ],
     "closer": "DoerFlow é essa camada de liquidação: identidade, escrow e ledgers de alta frequência para agentes, humanos e dispositivos se contratarem e receberem.",
     "cta": "Ler a tese completa"
+  },
+  "download": {
+    "title": "Download DoerFlow",
+    "lead": "v{{version}}: Wallet and Worker Android APKs for sideload.",
+    "hosted": "Installers are hosted in the public repo",
+    "sideloadWarn": "APKs are not on Play Store. Allow installs from unknown sources.",
+    "walletTitle": "Wallet",
+    "walletBody": "Publish tasks and manage on-chain assets. No order-taking.",
+    "walletCta": "Download Wallet APK",
+    "workerTitle": "Worker",
+    "workerBody": "Browse jobs, deliver proof, and receive rewards.",
+    "workerCta": "Download Worker APK",
+    "creatorTitle": "Creator DApp",
+    "creatorBody": "Browser entry — not an install package.",
+    "creatorCta": "Open app.doerflow.dev"
   }
 }

@@ -27,6 +27,7 @@ export function Header() {
       { label: t("header.nav.economy"), href: "#economy" },
       { label: t("header.nav.ecosystem"), href: "#ecosystem" },
       { label: t("header.nav.developers"), href: "#developers" },
+      { label: t("header.nav.download"), href: "/download/" },
       { label: t("header.nav.docs"), href: DOCS_URL },
     ],
     [t],
