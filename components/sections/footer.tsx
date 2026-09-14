@@ -6,31 +6,33 @@ import { Logo } from "@/components/site/logo"
 import { useT } from "@/lib/i18n/context"
 import { COLORS } from "@/lib/theme"
 import { DOCS_URL } from "@/lib/urls"
+import { localePath } from "@/lib/i18n/paths"
 
 const { Text } = Typography
 
 export function Footer() {
-  const { t } = useT()
+  const { t, locale } = useT()
+  const home = localePath(locale)
 
   const columns = useMemo(
     () => [
       {
         title: t("footer.columns.product.title"),
         links: [
-          { label: t("footer.columns.product.links.walletApp"), href: "#products" },
-          { label: t("footer.columns.product.links.workerApp"), href: "#products" },
-          { label: t("footer.columns.product.links.creatorDapp"), href: "#products" },
-          { label: t("footer.columns.product.links.adminConsole"), href: "#products" },
+          { label: t("footer.columns.product.links.walletApp"), href: `${home}#products` },
+          { label: t("footer.columns.product.links.workerApp"), href: `${home}#products` },
+          { label: t("footer.columns.product.links.creatorDapp"), href: `${home}#products` },
+          { label: t("footer.columns.product.links.adminConsole"), href: `${home}#products` },
         ],
       },
       {
         title: t("footer.columns.protocol.title"),
         links: [
-          { label: t("footer.columns.protocol.links.whyCrypto"), href: "#why-crypto" },
-          { label: t("footer.columns.protocol.links.architecture"), href: "#protocol" },
-          { label: t("footer.columns.protocol.links.economyFees"), href: "#economy" },
-          { label: t("footer.columns.protocol.links.useCases"), href: "#use-cases" },
-          { label: t("footer.columns.protocol.links.roadmap"), href: "#" },
+          { label: t("footer.columns.protocol.links.whyCrypto"), href: `${home}#why-crypto` },
+          { label: t("footer.columns.protocol.links.architecture"), href: `${home}#protocol` },
+          { label: t("footer.columns.protocol.links.economyFees"), href: `${home}#economy` },
+          { label: t("footer.columns.protocol.links.useCases"), href: `${home}#use-cases` },
+          { label: t("footer.columns.protocol.links.roadmap"), href: home },
         ],
       },
       {
@@ -38,21 +40,21 @@ export function Footer() {
         links: [
           { label: t("footer.columns.developers.links.docs"), href: DOCS_URL },
           { label: t("footer.columns.developers.links.github"), href: "https://github.com/doerflow" },
-          { label: t("footer.columns.developers.links.openApi"), href: "#developers" },
-          { label: t("footer.columns.developers.links.sdks"), href: "#developers" },
+          { label: t("footer.columns.developers.links.openApi"), href: `${home}#developers` },
+          { label: t("footer.columns.developers.links.sdks"), href: `${home}#developers` },
         ],
       },
       {
         title: t("footer.columns.company.title"),
         links: [
-          { label: t("footer.columns.company.links.luminaryWorks"), href: "#ecosystem" },
-          { label: t("footer.columns.company.links.privacy"), href: "#" },
+          { label: t("footer.columns.company.links.luminaryWorks"), href: `${home}#ecosystem` },
+          { label: t("footer.columns.company.links.privacy"), href: home },
           { label: t("footer.columns.company.links.terms"), href: `${DOCS_URL}/legal/terms` },
           { label: t("footer.columns.company.links.doerflowDev"), href: "https://doerflow.dev" },
         ],
       },
     ],
-    [t],
+    [t, home],
   )
 
   return (
