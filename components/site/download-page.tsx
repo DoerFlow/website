@@ -1,5 +1,6 @@
 "use client"
 
+import { useEffect, useState } from "react"
 import { AndroidOutlined, DownloadOutlined, GlobalOutlined } from "@ant-design/icons"
 import { Alert, Button, Space, Typography } from "antd"
 import { Header } from "@/components/site/header"
@@ -7,16 +8,37 @@ import { Footer } from "@/components/sections/footer"
 import { useT } from "@/lib/i18n/context"
 import { COLORS } from "@/lib/theme"
 
-const RELEASE_VERSION = process.env.NEXT_PUBLIC_RELEASE_VERSION ?? "0.1.0"
 const RELEASE_BASE =
   process.env.NEXT_PUBLIC_RELEASE_BASE ??
   "https://github.com/DoerFlow/downloads/releases/latest/download"
 
-const WALLET_APK = `${RELEASE_BASE}/DoerFlow-Wallet-${RELEASE_VERSION}.apk`
-const WORKER_APK = `${RELEASE_BASE}/DoerFlow-Worker-${RELEASE_VERSION}.apk`
+const WALLET_APK = `${RELEASE_BASE}/DoerFlow-Wallet.apk`
+const WORKER_APK = `${RELEASE_BASE}/DoerFlow-Worker.apk`
+
+const DOWNLOADS_API =
+  process.env.NEXT_PUBLIC_DOWNLOADS_API ??
+  "https://api.github.com/repos/DoerFlow/downloads/releases/latest"
 
 export function DownloadPage() {
   const { t } = useT()
+  const [versionLabel, setVersionLabel] = useState("…")
+
+  useEffect(() => {
+    let cancelled = false
+    fetch(DOWNLOADS_API)
+      .then((r) => (r.ok ? r.json() : null))
+      .then((data: { tag_name?: string } | null) => {
+        if (cancelled || !data?.tag_name) return
+        setVersionLabel(data.tag_name.replace(/^v/, ""))
+      })
+      .catch(() => {
+        if (!cancelled) setVersionLabel("latest")
+      })
+    return () => {
+      cancelled = true
+    }
+  }, [])
+
   return (
     <main>
       <Header />
@@ -25,7 +47,7 @@ export function DownloadPage() {
           {t("download.title")}
         </Typography.Title>
         <Typography.Paragraph style={{ color: COLORS.muted, fontSize: 16 }}>
-          {t("download.lead", { version: RELEASE_VERSION })}
+          {t("download.lead", { version: versionLabel })}
         </Typography.Paragraph>
         <Typography.Paragraph style={{ color: COLORS.muted, fontSize: 14 }}>
           {t("download.hosted")}{" "}
