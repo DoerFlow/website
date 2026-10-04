@@ -1,6 +1,6 @@
 packages:
   - "."
 
-onlyBuiltDependencies:
-  - "@biomejs/biome"
-  - "@parcel/watcher"
+allowBuilds:
+  "@biomejs/biome": true
+  "@parcel/watcher": true
