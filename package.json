@@ -31,6 +31,12 @@
     "node": ">=24.0.0",
     "pnpm": ">=11"
   },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@biomejs/biome",
+      "@parcel/watcher"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/doerflow/site.git"
