@@ -42,8 +42,8 @@ export function DownloadPage() {
   return (
     <main>
       <Header />
-      <div style={{ maxWidth: 720, margin: "0 auto", padding: "120px 24px 80px", minHeight: "70vh" }}>
-        <Typography.Title level={1} style={{ color: COLORS.text, marginBottom: 8 }}>
+      <div className="df-download">
+        <Typography.Title level={1} className="df-download-title" style={{ color: COLORS.text }}>
           {t("download.title")}
         </Typography.Title>
         <Typography.Paragraph style={{ color: COLORS.muted, fontSize: 16 }}>
@@ -58,36 +58,22 @@ export function DownloadPage() {
         <Alert
           type="warning"
           showIcon
-          style={{ marginBottom: 28 }}
+          className="df-download-alert"
           message={t("download.sideloadWarn")}
         />
         <Space direction="vertical" size="large" style={{ width: "100%" }}>
-          <section
-            style={{
-              background: "rgba(255,255,255,0.04)",
-              border: "1px solid rgba(255,255,255,0.10)",
-              borderRadius: 12,
-              padding: 24,
-            }}
-          >
+          <section className="df-download-card">
             <Typography.Title level={3} style={{ color: COLORS.text, marginTop: 0 }}>
               <AndroidOutlined /> {t("download.walletTitle")}
             </Typography.Title>
             <Typography.Paragraph style={{ color: COLORS.muted }}>
               {t("download.walletBody")}
             </Typography.Paragraph>
-            <Button type="primary" icon={<DownloadOutlined />} href={WALLET_APK} size="large">
+            <Button type="primary" icon={<DownloadOutlined />} href={WALLET_APK} size="large" block={false}>
               {t("download.walletCta")}
             </Button>
           </section>
-          <section
-            style={{
-              background: "rgba(255,255,255,0.04)",
-              border: "1px solid rgba(255,255,255,0.10)",
-              borderRadius: 12,
-              padding: 24,
-            }}
-          >
+          <section className="df-download-card">
             <Typography.Title level={3} style={{ color: COLORS.text, marginTop: 0 }}>
               <AndroidOutlined /> {t("download.workerTitle")}
             </Typography.Title>
@@ -98,14 +84,7 @@ export function DownloadPage() {
               {t("download.workerCta")}
             </Button>
           </section>
-          <section
-            style={{
-              background: "rgba(255,255,255,0.04)",
-              border: "1px solid rgba(255,255,255,0.10)",
-              borderRadius: 12,
-              padding: 24,
-            }}
-          >
+          <section className="df-download-card">
             <Typography.Title level={3} style={{ color: COLORS.text, marginTop: 0 }}>
               <GlobalOutlined /> {t("download.creatorTitle")}
             </Typography.Title>

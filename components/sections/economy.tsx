@@ -56,13 +56,16 @@ export function Economy() {
         <Col xs={24} lg={14}>
           <Reveal>
             <Card className="df-glass" variant="borderless" styles={{ body: { padding: 8 } }}>
-              <Table
-                columns={columns}
-                dataSource={dataSource}
-                pagination={false}
-                size="middle"
-                style={{ background: "transparent" }}
-              />
+              <div className="df-table-scroll">
+                <Table
+                  columns={columns}
+                  dataSource={dataSource}
+                  pagination={false}
+                  size="middle"
+                  scroll={{ x: "max-content" }}
+                  style={{ background: "transparent" }}
+                />
+              </div>
             </Card>
           </Reveal>
         </Col>

@@ -31,7 +31,7 @@ export function FooterCta() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
-        className="df-glass"
+        className="df-glass df-footer-cta"
         style={{
           padding: "56px 28px",
           background:
@@ -62,7 +62,7 @@ export function FooterCta() {
           </Button>
         </Space>
 
-        <div style={{ maxWidth: 440, margin: "36px auto 0" }}>
+        <div className="df-footer-cta-form" style={{ maxWidth: 440, margin: "36px auto 0" }}>
           <Space.Compact style={{ width: "100%" }}>
             <Input
               size="large"

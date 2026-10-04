@@ -1,7 +1,9 @@
 {
   "meta": {
     "title": "DoerFlow — Het liquiditeitsprotocol voor autonome agents",
-    "description": "AI-agents kunnen geen bankrekening openen. DoerFlow is de crypto-settlementlaag voor autonome agents, skills, mensen en apparaten — inclusief streaming micropayments en DePIN-compute."
+    "description": "AI-agents kunnen geen bankrekening openen. DoerFlow is de crypto-settlementlaag voor autonome agents, skills, mensen en apparaten — inclusief streaming micropayments en DePIN-compute.",
+    "downloadTitle": "Download DoerFlow — Wallet- en Worker-APKs",
+    "downloadDescription": "Download officiële DoerFlow Wallet- en Worker-APKs via GitHub Releases. Klaar voor sideload."
   },
   "common": {
     "launchApp": "App starten",
@@ -721,7 +723,7 @@
   },
   "download": {
     "title": "Download DoerFlow",
-    "lead": "v{{version}}: Wallet and Worker Android APKs for sideload.",
+    "lead": "v{{version}}: Wallet- en Worker-APKs voor sideload.",
     "hosted": "Installers are hosted in the public repo",
     "sideloadWarn": "APKs are not on Play Store. Allow installs from unknown sources.",
     "walletTitle": "Wallet",

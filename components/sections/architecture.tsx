@@ -23,7 +23,7 @@ export function Architecture() {
         subtitle={t("architecture.subtitle")}
       />
 
-      <div style={{ display: "flex", flexDirection: "column", gap: 14, maxWidth: 920, margin: "0 auto" }}>
+      <div className="df-arch-stack">
         {layers.map((l, i) => (
           <Reveal key={l.n} delay={i * 0.06}>
             <Card
@@ -32,32 +32,18 @@ export function Architecture() {
               styles={{ body: { padding: 0 } }}
             >
               <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 20,
-                  padding: "22px 26px",
-                  borderLeft: `3px solid ${LAYER_ACCENTS[i]}`,
-                  borderRadius: 16,
-                }}
+                className="df-arch-row"
+                style={{ borderLeft: `3px solid ${LAYER_ACCENTS[i]}` }}
               >
-                <span
-                  style={{
-                    fontSize: 28,
-                    fontWeight: 800,
-                    color: LAYER_ACCENTS[i],
-                    opacity: 0.85,
-                    minWidth: 44,
-                  }}
-                >
+                <span className="df-arch-index" style={{ color: LAYER_ACCENTS[i] }}>
                   {l.n}
                 </span>
-                <div style={{ flex: 1 }}>
+                <div className="df-arch-body">
                   <Title level={5} style={{ margin: 0, color: COLORS.text }}>
                     {l.name}
                   </Title>
                   <Text style={{ color: COLORS.muted }}>{l.desc}</Text>
-                  <div style={{ marginTop: 10, display: "flex", flexWrap: "wrap", gap: 6 }}>
+                  <div className="df-arch-tags">
                     {l.tags.map((tag) => (
                       <Tag
                         key={tag}

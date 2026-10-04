@@ -1,7 +1,9 @@
 {
   "meta": {
     "title": "DoerFlow — 자율 에이전트를 위한 유동성 프로토콜",
-    "description": "AI 에이전트는 은행 계좌를 열 수 없습니다. DoerFlow는 자율 에이전트, Skill, 인간, 기기를 위한 암호 정산 계층이며 스트리밍 소액 결제와 DePIN 연산을 포함합니다."
+    "description": "AI 에이전트는 은행 계좌를 열 수 없습니다. DoerFlow는 자율 에이전트, Skill, 인간, 기기를 위한 암호 정산 계층이며 스트리밍 소액 결제와 DePIN 연산을 포함합니다.",
+    "downloadTitle": "DoerFlow 다운로드 — Wallet 및 Worker APK",
+    "downloadDescription": "공식 DoerFlow Wallet 및 Worker Android APK를 GitHub Releases에서 다운로드하세요. 사이드로드용 빌드입니다."
   },
   "common": {
     "launchApp": "앱 실행",
@@ -720,8 +722,8 @@
     "cta": "논지 전문 읽기"
   },
   "download": {
-    "title": "Download DoerFlow",
-    "lead": "v{{version}}: Wallet and Worker Android APKs for sideload.",
+    "title": "DoerFlow 다운로드",
+    "lead": "v{{version}}: 사이드로드용 Wallet 및 Worker Android APK.",
     "hosted": "Installers are hosted in the public repo",
     "sideloadWarn": "APKs are not on Play Store. Allow installs from unknown sources.",
     "walletTitle": "Wallet",

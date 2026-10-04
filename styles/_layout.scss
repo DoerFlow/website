@@ -5,9 +5,115 @@
   padding: 96px 24px;
   max-width: 1240px;
   margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  min-width: 0;
+
+  @media (max-width: 1023px) {
+    padding: 80px 20px;
+  }
 
   @media (max-width: 768px) {
     padding: 64px 16px;
+  }
+}
+
+.df-arch-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 920px;
+  margin: 0 auto;
+  min-width: 0;
+}
+
+.df-arch-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 22px 26px;
+  border-radius: 16px;
+  min-width: 0;
+}
+
+.df-arch-index {
+  font-size: 28px;
+  font-weight: 800;
+  opacity: 0.85;
+  min-width: 44px;
+  flex-shrink: 0;
+}
+
+.df-arch-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.df-arch-tags {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.df-table-scroll {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.df-use-cases-tabs {
+  min-width: 0;
+  max-width: 100%;
+}
+
+@media (max-width: 991px) {
+  .df-arch-row {
+    align-items: flex-start;
+    gap: 14px;
+    padding: 18px 18px;
+  }
+
+  .df-arch-index {
+    font-size: 22px;
+    min-width: 36px;
+  }
+
+  .df-use-cases-tabs {
+    overflow: hidden;
+  }
+
+  .df-use-cases-tabs .ant-tabs-nav {
+    max-width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .df-use-cases-panel {
+    margin-left: 0 !important;
+    padding: 20px !important;
+  }
+
+  .df-section .ant-row {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .df-arch-row {
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+  }
+
+  .df-hero-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    padding: 20px 16px;
+  }
+
+  .df-logo-tagline {
+    letter-spacing: 0.08em;
   }
 }
 

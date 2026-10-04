@@ -25,5 +25,3 @@ export function Logo({ size = 30, withText = true }: { size?: number; withText?:
     </div>
   )
 }
-
-export { LOGO_MARK_SRC }

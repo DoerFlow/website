@@ -4,15 +4,24 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: clip;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
+  max-width: 100%;
   background-color: var(--df-bg);
   color: var(--df-text);
   font-family: var(--font-inter), "PingFang SC", "Microsoft YaHei", sans-serif;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
+}
+
+body {
+  overflow-x: clip;
 }
 
 ::selection {

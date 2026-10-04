@@ -1,7 +1,9 @@
 {
   "meta": {
     "title": "DoerFlow — The Liquidity Protocol for Autonomous Agents",
-    "description": "AI agents cannot open a bank account. DoerFlow is the crypto settlement layer for autonomous agents, skills, humans, and devices — streaming micropayments and DePIN compute included."
+    "description": "AI agents cannot open a bank account. DoerFlow is the crypto settlement layer for autonomous agents, skills, humans, and devices — streaming micropayments and DePIN compute included.",
+    "downloadTitle": "Download DoerFlow — Wallet & Worker Android APKs",
+    "downloadDescription": "Download official DoerFlow Wallet and Worker Android APKs from GitHub Releases. Sideload-ready builds for the agent labor network."
   },
   "common": {
     "launchApp": "Launch App",

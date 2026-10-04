@@ -1,7 +1,9 @@
 {
   "meta": {
     "title": "DoerFlow — O protocolo de liquidez para agentes autônomos",
-    "description": "Agentes de IA não conseguem abrir conta bancária. DoerFlow é a camada cripto de liquidação para agentes autônomos, skills, humanos e dispositivos — com micropagamentos em streaming e compute DePIN."
+    "description": "Agentes de IA não conseguem abrir conta bancária. DoerFlow é a camada cripto de liquidação para agentes autônomos, skills, humanos e dispositivos — com micropagamentos em streaming e compute DePIN.",
+    "downloadTitle": "Baixar DoerFlow — APKs Wallet e Worker",
+    "downloadDescription": "Baixe os APKs oficiais do DoerFlow Wallet e Worker no GitHub Releases. Builds prontos para sideload."
   },
   "common": {
     "launchApp": "Abrir aplicativo",
@@ -720,8 +722,8 @@
     "cta": "Ler a tese completa"
   },
   "download": {
-    "title": "Download DoerFlow",
-    "lead": "v{{version}}: Wallet and Worker Android APKs for sideload.",
+    "title": "Baixar DoerFlow",
+    "lead": "v{{version}}: APKs Wallet e Worker para sideload.",
     "hosted": "Installers are hosted in the public repo",
     "sideloadWarn": "APKs are not on Play Store. Allow installs from unknown sources.",
     "walletTitle": "Wallet",

@@ -3,14 +3,15 @@
 import { GlobalOutlined } from "@ant-design/icons"
 import { Dropdown } from "antd"
 import type { MenuProps } from "antd"
-import { useRouter } from "next/navigation"
+import { usePathname, useRouter } from "next/navigation"
 import { LOCALE_LABELS, LOCALE_SHORT, LOCALES, type Locale } from "@/lib/i18n/config"
-import { localePath } from "@/lib/i18n/paths"
+import { localizedHref } from "@/lib/i18n/paths"
 import { useT } from "@/lib/i18n/context"
 import { COLORS } from "@/lib/theme"
 
 export function LanguageSwitcher() {
   const router = useRouter()
+  const pathname = usePathname() || "/"
   const { locale, t } = useT()
 
   const items: MenuProps["items"] = LOCALES.map((code) => ({
@@ -24,7 +25,7 @@ export function LanguageSwitcher() {
         items,
         selectable: true,
         selectedKeys: [locale],
-        onClick: ({ key }) => router.push(localePath(key as Locale)),
+        onClick: ({ key }) => router.push(localizedHref(key as Locale, pathname)),
       }}
       trigger={["click"]}
       placement="bottomRight"
@@ -32,6 +33,7 @@ export function LanguageSwitcher() {
       <button
         type="button"
         aria-label={t("lang.label")}
+        className="df-lang-switch"
         style={{
           display: "inline-flex",
           alignItems: "center",

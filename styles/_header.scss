@@ -1,9 +1,13 @@
 @use "tokens" as *;
 
 .df-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   width: 100%;
   background: rgba(11, 17, 32, 0.72);
   backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--df-border);
 }
 
@@ -16,6 +20,18 @@
   align-items: center;
   justify-content: space-between;
   gap: 16px;
+  min-width: 0;
+}
+
+@media (max-width: 1023px) {
+  .df-header-inner {
+    padding: 0 16px;
+    gap: 12px;
+  }
+
+  .df-header-brand {
+    min-width: 0;
+  }
 }
 
 .df-header-brand {

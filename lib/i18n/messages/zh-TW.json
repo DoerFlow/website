@@ -1,7 +1,9 @@
 {
   "meta": {
     "title": "DoerFlow — 自主執行體的價值流動協議",
-    "description": "AI Agent 無法去銀行開戶。DoerFlow 是面向自主 Agent、Skill、人類與裝置的加密結算層——含微流支付與算力 DePIN。"
+    "description": "AI Agent 無法去銀行開戶。DoerFlow 是面向自主 Agent、Skill、人類與裝置的加密結算層——含微流支付與算力 DePIN。",
+    "downloadTitle": "下載 DoerFlow — Wallet 與 Worker Android APK",
+    "downloadDescription": "下載官方 DoerFlow Wallet 與 Worker Android APK（GitHub Releases 側載）。面向 Agent 勞動力網路的安裝包。"
   },
   "common": {
     "launchApp": "啟動應用",

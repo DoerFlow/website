@@ -1,0 +1,68 @@
+@use "tokens" as *;
+
+.df-download {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 120px 24px 80px;
+  min-height: 70vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.df-download-title {
+  margin-bottom: 8px !important;
+  font-size: clamp(28px, 6vw, 38px) !important;
+  line-height: 1.2 !important;
+}
+
+.df-download-alert {
+  margin-bottom: 28px;
+}
+
+.df-download-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+@media (max-width: 1023px) {
+  .df-download {
+    padding: 96px 20px 64px;
+  }
+}
+
+@media (max-width: 768px) {
+  .df-download {
+    padding: 88px 16px 56px;
+  }
+
+  .df-download-card {
+    padding: 18px;
+  }
+
+  .df-download-card .ant-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .df-footer-cta {
+    padding: 36px 18px !important;
+  }
+
+  .df-footer-cta-form .ant-space-compact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .df-footer-cta-form .ant-space-compact .ant-input,
+  .df-footer-cta-form .ant-space-compact .ant-btn {
+    width: 100%;
+    border-radius: 8px !important;
+  }
+
+  .df-footer-cta-form .ant-space-compact .ant-btn {
+    margin-top: 10px;
+  }
+}

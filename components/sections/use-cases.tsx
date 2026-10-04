@@ -1,7 +1,7 @@
 "use client"
 
 import type { ReactNode } from "react"
-import { Tabs, Typography, Tag } from "antd"
+import { Grid, Tabs, Typography, Tag } from "antd"
 import {
   ShopOutlined,
   TeamOutlined,
@@ -17,6 +17,7 @@ import { useT } from "@/lib/i18n/context"
 import { COLORS } from "@/lib/theme"
 
 const { Title, Paragraph } = Typography
+const { useBreakpoint } = Grid
 
 const CASE_ICONS: Record<string, ReactNode> = {
   marketplace: <ShopOutlined />,
@@ -31,7 +32,9 @@ const CASE_ICONS: Record<string, ReactNode> = {
 
 export function UseCases() {
   const { t, tm } = useT()
+  const screens = useBreakpoint()
   const cases = tm<Array<{ key: string; label: string; title: string; desc: string; tags: string[] }>>("useCases.cases")
+  const tabPlacement = screens.lg ? "start" : "top"
 
   return (
     <section id="use-cases" className="df-anchor df-section">
@@ -45,7 +48,8 @@ export function UseCases() {
 
       <Reveal>
         <Tabs
-          tabPlacement="left"
+          className="df-use-cases-tabs"
+          tabPlacement={tabPlacement}
           style={{ minHeight: 280 }}
           items={cases.map((c) => ({
             key: c.key,
@@ -57,8 +61,8 @@ export function UseCases() {
             ),
             children: (
               <div
-                className="df-glass"
-                style={{ padding: 32, marginLeft: 8 }}
+                className="df-glass df-use-cases-panel"
+                style={{ padding: 32, marginLeft: screens.lg ? 8 : 0 }}
               >
                 <Title level={3} style={{ marginTop: 0, color: COLORS.text }}>
                   {c.title}

@@ -48,8 +48,12 @@ pnpm build  # 输出到 out/
 
 ### SEO
 
-- 各语言独立 URL + `generateMetadata` + `hreflang`
-- `app/sitemap.ts`、`app/robots.ts` 随构建生成
+- 纯静态 SSG：`next.config.mjs` → `output: "export"`，产物在 `out/`
+- 各语言独立 URL + `generateMetadata`（title/description/canonical/hreflang）
+- Open Graph + Twitter `summary_large_image`（`/brand/app-icon-1024.png`）
+- JSON-LD（Organization / WebSite / SoftwareApplication / WebPage）
+- `app/sitemap.ts` 覆盖首页与下载页全部语言；`app/robots.ts` 指向 sitemap
+- 下载页独立多语言 title/description；语言切换保留当前路径（首页 ↔ 下载）
 
 ## License
 

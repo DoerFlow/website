@@ -1,7 +1,7 @@
 "use client"
 
 import { LoginOutlined, MenuOutlined } from "@ant-design/icons"
-import { Affix, Button, Drawer, Grid, Space } from "antd"
+import { Button, Drawer, Grid, Space } from "antd"
 import { useMemo, useState } from "react"
 import { LanguageSwitcher } from "./language-switcher"
 import { Logo } from "./logo"
@@ -36,79 +36,77 @@ export function Header() {
   )
 
   return (
-    <Affix offsetTop={0}>
-      <header className="df-header">
-        <div className="df-header-inner">
-          <a href={home} aria-label={t("header.homeAria")} className="df-header-brand">
-            <Logo />
-          </a>
+    <header className="df-header">
+      <div className="df-header-inner">
+        <a href={home} aria-label={t("header.homeAria")} className="df-header-brand">
+          <Logo />
+        </a>
 
-          {isDesktop ? (
-            <>
-              <nav className="df-header-nav" aria-label="Primary">
-                {nav.map((item) => (
-                  <a key={item.href} href={item.href} className="df-link df-header-nav-link">
-                    {item.label}
-                  </a>
-                ))}
-              </nav>
-              <Space size={4} align="center" className="df-header-actions">
-                <LanguageSwitcher />
-                <Button
-                  type="text"
-                  className="df-header-login-btn"
-                  icon={<LoginOutlined />}
-                  href={LOGIN_URL}
-                  target="_blank"
-                  style={{ color: COLORS.text, fontWeight: 500 }}
-                >
-                  {t("header.login")}
-                </Button>
-              </Space>
-            </>
-          ) : (
+        {isDesktop ? (
+          <>
+            <nav className="df-header-nav" aria-label="Primary">
+              {nav.map((item) => (
+                <a key={item.href} href={item.href} className="df-link df-header-nav-link">
+                  {item.label}
+                </a>
+              ))}
+            </nav>
             <Space size={4} align="center" className="df-header-actions">
               <LanguageSwitcher />
               <Button
                 type="text"
-                className="df-header-menu-btn"
-                aria-label={t("header.openMenu")}
-                icon={<MenuOutlined style={{ color: COLORS.text, fontSize: 20 }} />}
-                onClick={() => setOpen(true)}
-              />
-            </Space>
-          )}
-        </div>
-
-        <Drawer
-          title={<Logo />}
-          placement="right"
-          onClose={() => setOpen(false)}
-          open={open}
-          styles={{
-            body: { background: COLORS.bg },
-            header: { background: COLORS.bg },
-            wrapper: { width: 300 },
-          }}
-        >
-          <nav className="df-header-drawer-nav">
-            {nav.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                className="df-header-drawer-link"
-                onClick={() => setOpen(false)}
+                className="df-header-login-btn"
+                icon={<LoginOutlined />}
+                href={LOGIN_URL}
+                target="_blank"
+                style={{ color: COLORS.text, fontWeight: 500 }}
               >
-                {item.label}
-              </a>
-            ))}
-            <div className="df-header-drawer-divider" />
-            <Button block type="primary" icon={<LoginOutlined />} href={LOGIN_URL} target="_blank">
-              {t("header.login")}
-            </Button>
-          </nav>
-        </Drawer>
-      </header>
-    </Affix>
+                {t("header.login")}
+              </Button>
+            </Space>
+          </>
+        ) : (
+          <Space size={4} align="center" className="df-header-actions">
+            <LanguageSwitcher />
+            <Button
+              type="text"
+              className="df-header-menu-btn"
+              aria-label={t("header.openMenu")}
+              icon={<MenuOutlined style={{ color: COLORS.text, fontSize: 20 }} />}
+              onClick={() => setOpen(true)}
+            />
+          </Space>
+        )}
+      </div>
+
+      <Drawer
+        title={<Logo />}
+        placement="right"
+        onClose={() => setOpen(false)}
+        open={open}
+        styles={{
+          body: { background: COLORS.bg },
+          header: { background: COLORS.bg },
+          wrapper: { width: "min(300px, 86vw)" },
+        }}
+      >
+        <nav className="df-header-drawer-nav">
+          {nav.map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              className="df-header-drawer-link"
+              onClick={() => setOpen(false)}
+            >
+              {item.label}
+            </a>
+          ))}
+          <div className="df-header-drawer-divider" />
+          <Button block type="primary" icon={<LoginOutlined />} href={LOGIN_URL} target="_blank">
+            {t("header.login")}
+          </Button>
+        </nav>
+      </Drawer>
+    </header>
   )
 }
