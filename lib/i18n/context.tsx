@@ -15,7 +15,7 @@ import {
   type Locale,
   isLocale,
 } from "./config"
-import { detectLocaleFromNavigator } from "./detect"
+import { detectPreferredLocale } from "./detect"
 import { messagesByLocale, type Messages } from "./messages"
 import { formatMessage, getMessage } from "./resolve"
 
@@ -43,11 +43,8 @@ function persistLocale(locale: Locale) {
 
 function resolveInitialLocale(): Locale {
   const saved = readCookieLocale()
-  if (saved) return saved
-  if (typeof navigator !== "undefined") {
-    return detectLocaleFromNavigator(navigator.language)
-  }
-  return DEFAULT_LOCALE
+  if (typeof navigator === "undefined") return saved ?? DEFAULT_LOCALE
+  return detectPreferredLocale(saved)
 }
 
 export function I18nProvider({
