@@ -10,6 +10,7 @@ export const LOCALES = [
   "it",
   "ja",
   "ko",
+  "fr",
 ] as const
 
 export type Locale = (typeof LOCALES)[number]
@@ -26,6 +27,7 @@ export const LOCALE_LABELS: Record<Locale, string> = {
   it: "Italiano",
   ja: "日本語",
   ko: "한국어",
+  fr: "Français",
 }
 
 export const LOCALE_SHORT: Record<Locale, string> = {
@@ -38,6 +40,7 @@ export const LOCALE_SHORT: Record<Locale, string> = {
   it: "IT",
   ja: "JA",
   ko: "KO",
+  fr: "FR",
 }
 
 export function isLocale(value: string): value is Locale {

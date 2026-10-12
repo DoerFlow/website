@@ -35,6 +35,7 @@ export function getAntdLocaleKey(locale: Locale): string {
     it: "it_IT",
     ja: "ja_JP",
     ko: "ko_KR",
+    fr: "fr_FR",
   }
   return map[locale]
 }

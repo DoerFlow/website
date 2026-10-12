@@ -1,28 +1,15 @@
-import { DEFAULT_LOCALE, type Locale } from "./config"
+import { DEFAULT_LOCALE, LOCALES, type Locale } from "./config"
+import { detectClientPreferredLocale, matchSupportedLocale } from "./preferred-locale"
 
-/** Map browser language to supported locale. Default: English. */
+/** Map one browser language tag onto a supported locale. Unknown tags become English. */
 export function detectLocaleFromNavigator(language?: string): Locale {
-  const lang = (language ?? "").toLowerCase()
+  const match = matchSupportedLocale(language)
+  if (!match) return DEFAULT_LOCALE
+  return match as Locale
+}
 
-  if (lang.startsWith("zh")) {
-    if (
-      lang.includes("tw") ||
-      lang.includes("hk") ||
-      lang.includes("hant") ||
-      lang === "zh-hk" ||
-      lang === "zh-mo"
-    ) {
-      return "zh-TW"
-    }
-    return "zh-CN"
-  }
-
-  if (lang.startsWith("es")) return "es"
-  if (lang.startsWith("pt")) return "pt"
-  if (lang.startsWith("nl")) return "nl"
-  if (lang.startsWith("it")) return "it"
-  if (lang.startsWith("ja")) return "ja"
-  if (lang.startsWith("ko")) return "ko"
-
-  return DEFAULT_LOCALE
+/** Saved cookie, then browser languages, then time zone, then English. */
+export function detectPreferredLocale(stored?: string | null): Locale {
+  const next = detectClientPreferredLocale(stored)
+  return (LOCALES as readonly string[]).includes(next) ? (next as Locale) : DEFAULT_LOCALE
 }

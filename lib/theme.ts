@@ -1,50 +1,48 @@
 import { theme, type ThemeConfig } from "antd"
 
 export const COLORS = {
-  bg: "#0B1120",
-  surface: "#141B2D",
-  elevated: "#1A2235",
-  primary: "#00D4AA",
+  bg: "var(--df-bg)",
+  surface: "var(--df-surface)",
+  elevated: "var(--df-elevated)",
+  primary: "var(--df-primary)",
   purple: "#7C3AED",
-  text: "#E7ECF3",
-  muted: "#8B97AD",
-  border: "rgba(255,255,255,0.08)",
+  text: "var(--df-text)",
+  muted: "var(--df-muted)",
+  border: "var(--df-border)",
 }
 
-export const darkTheme: ThemeConfig = {
-  algorithm: theme.darkAlgorithm,
-  token: {
-    colorPrimary: COLORS.primary,
-    colorBgContainer: COLORS.surface,
-    colorBgElevated: COLORS.elevated,
-    colorBgLayout: COLORS.bg,
-    colorBorder: COLORS.border,
-    colorText: COLORS.text,
-    colorTextSecondary: COLORS.muted,
-    borderRadius: 8,
-    fontFamily:
-      'var(--font-inter), Inter, "PingFang SC", "Microsoft YaHei", sans-serif',
-    fontSize: 15,
-  },
-  components: {
-    Layout: {
-      headerBg: "transparent",
-      bodyBg: COLORS.bg,
-      footerBg: "transparent",
+export function antdTheme(isDark: boolean): ThemeConfig {
+  return {
+    algorithm: isDark ? theme.darkAlgorithm : theme.defaultAlgorithm,
+    token: {
+      colorPrimary: isDark ? "#43E0C1" : "#087C6B",
+      colorBgContainer: isDark ? "#141B2D" : "#FFFFFF",
+      colorBgElevated: isDark ? "#1A2235" : "#FFFFFF",
+      colorBgLayout: isDark ? "#0B1120" : "#F5F8F7",
+      colorBorder: isDark ? "rgba(255,255,255,0.12)" : "rgba(15,43,38,0.16)",
+      colorText: isDark ? "#F4F7FA" : "#102520",
+      colorTextSecondary: isDark ? "#A9B4C7" : "#4D625D",
+      borderRadius: 8,
+      fontFamily:
+        'var(--font-inter), Inter, "PingFang SC", "Microsoft YaHei", sans-serif',
+      fontSize: 15,
     },
-    Card: {
-      colorBgContainer: "rgba(26,34,53,0.55)",
+    components: {
+      Layout: {
+        headerBg: "transparent",
+        bodyBg: "transparent",
+        footerBg: "transparent",
+      },
+      Card: { colorBgContainer: "var(--df-surface)" },
+      Steps: { colorPrimary: isDark ? "#43E0C1" : "#087C6B" },
+      Tabs: {
+        inkBarColor: isDark ? "#43E0C1" : "#087C6B",
+        itemSelectedColor: isDark ? "#43E0C1" : "#087C6B",
+      },
+      Table: {
+        headerBg: "var(--df-elevated)",
+        colorBgContainer: "var(--df-surface)",
+      },
     },
-    Steps: {
-      colorPrimary: COLORS.primary,
-    },
-    Tabs: {
-      inkBarColor: COLORS.primary,
-      itemSelectedColor: COLORS.primary,
-    },
-    Table: {
-      headerBg: COLORS.elevated,
-      colorBgContainer: "rgba(20,27,45,0.6)",
-    },
-  },
+  }
 }

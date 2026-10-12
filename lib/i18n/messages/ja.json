@@ -1,12 +1,12 @@
 {
   "meta": {
-    "title": "DoerFlow — 自律エージェントのための流動性プロトコル",
-    "description": "AI エージェントは銀行口座を開けない。DoerFlow は自律エージェント、Skill、人間、デバイスのための暗号決済層。ストリーミング少額決済と DePIN 計算資源を含む。",
+    "title": "DoerFlow — AI 時代のブロックチェーン取引・決済プラットフォーム",
+    "description": "DoerFlow は Agent、人、サーバー、デバイスの取引と決済を扱い、タスク基盤、Web、モバイルアプリ、SDK、API を提供します。",
     "downloadTitle": "DoerFlow をダウンロード — Wallet / Worker APK",
     "downloadDescription": "公式の DoerFlow Wallet / Worker Android APK を GitHub Releases からダウンロード。サイドロード対応。"
   },
   "common": {
-    "launchApp": "アプリを起動",
+    "launchApp": "プラットフォームへ",
     "readDocs": "ドキュメントを読む",
     "readDocumentation": "ドキュメントを読む",
     "github": "GitHub",
@@ -43,30 +43,7 @@
     "title": "自律エージェントのための",
     "titleHighlight": "流動性プロトコル",
     "tagline": "Agent、Skill、人間のワーカーをオンチェーンで安全に取引",
-    "body": "伝統金融は人のために、暗号ネットワークはコードのために設計されている。DoerFlow はエージェントが本当に使える決済層だ。銀行口座も KYC も不要、ウォレットだけ。アイデンティティをミント。Skill を登録。エスクロー。納品。自動決済。",
-    "stats": [
-      {
-        "title": "アクティブ Agent",
-        "value": 12480,
-        "suffix": "+"
-      },
-      {
-        "title": "登録 Skill",
-        "value": 3260,
-        "suffix": "+"
-      },
-      {
-        "title": "決済済み取引高",
-        "value": 8.4,
-        "prefix": "$",
-        "suffix": "M"
-      },
-      {
-        "title": "オンラインデバイス",
-        "value": 5710,
-        "suffix": "+"
-      }
-    ]
+    "body": "伝統金融は人のために、暗号ネットワークはコードのために設計されている。DoerFlow はエージェントが本当に使える決済層だ。銀行口座も KYC も不要、ウォレットだけ。アイデンティティをミント。Skill を登録。エスクロー。納品。自動決済。"
   },
   "shift": {
     "eyebrow": "パラダイムシフト",
@@ -342,6 +319,11 @@
         "fee": "エネルギー清算",
         "rate": "kWh あたり bps",
         "recipient": "プロトコル"
+      },
+      {
+        "fee": "デバイス貸出料",
+        "rate": "時間あたり bps",
+        "recipient": "デバイス提供者"
       }
     ],
     "exampleSettlement": "決済例",
@@ -725,7 +707,6 @@
     "title": "DoerFlow をダウンロード",
     "lead": "v{{version}}: サイドロード用 Wallet / Worker Android APK。",
     "hosted": "Installers are hosted in the public repo",
-    "sideloadWarn": "APKs are not on Play Store. Allow installs from unknown sources.",
     "walletTitle": "Wallet",
     "walletBody": "Publish tasks and manage on-chain assets. No order-taking.",
     "walletCta": "Download Wallet APK",
@@ -735,5 +716,179 @@
     "creatorTitle": "Creator DApp",
     "creatorBody": "Browser entry — not an install package.",
     "creatorCta": "Open app.doerflow.dev"
+  },
+  "siteV2": {
+    "theme": {
+      "label": "テーマ",
+      "light": "ライト",
+      "dark": "ダーク",
+      "system": "システム"
+    },
+    "a11y": {
+      "skip": "メインコンテンツへ移動"
+    },
+    "nav": {
+      "aria": "メインナビゲーション",
+      "advantages": "強み",
+      "scenes": "場面",
+      "products": "製品",
+      "settlement": "決済",
+      "workflow": "流れ"
+    },
+    "actions": {
+      "platform": "プラットフォームへ",
+      "docs": "ドキュメントを見る",
+      "download": "アプリを入手",
+      "start": "使い始める",
+      "readDocs": "ドキュメントを読む"
+    },
+    "hero": {
+      "eyebrow": "ブロックチェーン決済 · Agent 取引",
+      "title": "AI 時代の",
+      "highlight": "ブロックチェーン取引・決済プラットフォーム",
+      "body": "従来の金融は人のために設計され、暗号ネットワークはコードのために設計されています。DoerFlow は AI Agent、再利用できる Skill、人間のワーカー、サーバー、IoT デバイスを一つの取引・決済ネットワークにつなぎます。銀行口座も KYC も不要で、ウォレットだけで十分です。",
+      "scope": "Agent ↔ Agent · Agent ↔ 人 · Agent ↔ サーバー · Agent ↔ デバイス",
+      "cadence": "身份を発行。Skill を登録。資金を預託。仕事を届け。自動決済。"
+    },
+    "advantages": {
+      "eyebrow": "一つの基盤、二つの決済",
+      "title": "従来のブロックチェーン決済に、Agent 取引を加える",
+      "subtitle": "人とタスクはオンチェーン預託のまま。Agent、API、デバイスの高頻度呼び出しは使用量で決済できます。",
+      "items": [
+        {
+          "title": "オンチェーン預託",
+          "body": "タスク、検収、紛争は先に資金をロックし、確認後に支払います。"
+        },
+        {
+          "title": "Agent の計量決済",
+          "body": "呼び出し、計算、データは署名済みレシートで記帳し、周期的にまとめて決済します。"
+        }
+      ]
+    },
+    "scenes": {
+      "eyebrow": "実際の取引場面",
+      "title": "Agent から人、サーバー、デバイスまで",
+      "subtitle": "発見、見積、実行、検収、決済を同じ流れで、ソフトウェアと人と産業資源に使います。",
+      "items": [
+        {
+          "title": "Agent ↔ Agent",
+          "body": "Agent が能力を見つけ、見積を取り、呼び出し、自動決済します。"
+        },
+        {
+          "title": "Agent ↔ 人",
+          "body": "配達、運用、専門作業を公開し、検収後に決済します。"
+        },
+        {
+          "title": "Agent ↔ サーバー",
+          "body": "クラウド API、モデル、企業サービスを呼び出しや使用量で取引します。"
+        },
+        {
+          "title": "Agent ↔ モバイルとデバイス",
+          "body": "スマホ、PC、ゲートウェイ、IoT 機器を接続して受け取ります。"
+        },
+        {
+          "title": "タスク市場",
+          "body": "公開、受注、納品、検収、紛争を一つの場所で扱います。"
+        },
+        {
+          "title": "計算力と産業資源",
+          "body": "余った計算力、データ、接続機器を計量して販売します。"
+        }
+      ]
+    },
+    "products": {
+      "eyebrow": "レシートだけではない",
+      "title": "取引、タスク、接続ツールをまとめて提供",
+      "subtitle": "プロトコル、クライアント、開発ツールは一つの製品です。",
+      "items": [
+        {
+          "key": "task",
+          "title": "タスク公開",
+          "body": "仕事を作り、報酬と検収を定め、公開と決済を追います。",
+          "action": "プラットフォームへ"
+        },
+        {
+          "key": "web",
+          "title": "Web",
+          "body": "ブラウザで市場、仕事、資金、Agent を管理します。",
+          "action": "Web を開く"
+        },
+        {
+          "key": "app",
+          "title": "モバイルアプリ",
+          "body": "スマホで公開、受注、証明、資金管理を行います。",
+          "action": "アプリを入手"
+        },
+        {
+          "key": "sdk",
+          "title": "SDK・API・MCP",
+          "body": "Agent とクラウドサービスをブロックチェーン取引市場へ接続します。",
+          "action": "ドキュメントを見る"
+        },
+        {
+          "key": "money",
+          "title": "資金ツール",
+          "body": "購入、入金、ブリッジ、スワップでタスクと Agent 取引を支えます。",
+          "action": "プラットフォームへ"
+        },
+        {
+          "key": "developer",
+          "title": "開発者向け接続",
+          "body": "能力、鍵、見積、レシートを登録・管理します。",
+          "action": "ドキュメントを見る"
+        }
+      ]
+    },
+    "settlement": {
+      "eyebrow": "決済方法",
+      "title": "預託か、高頻度決済かを取引で選ぶ",
+      "subtitle": "検収が必要な仕事は資金をロック。機械呼び出しは使用量を記帳し、周期決済します。",
+      "rails": [
+        {
+          "title": "オンチェーン預託",
+          "body": "資金は預託契約にロックされ、検収または紛争処理後に支払われます。"
+        },
+        {
+          "title": "周期決済",
+          "body": "署名済みレシートを先に記帳し、まとめてチェーンへ送り、引き出し経路を残します。"
+        }
+      ]
+    },
+    "workflow": {
+      "eyebrow": "使い方",
+      "title": "公開から決済まで",
+      "subtitle": "五つの手順で人、Agent、サーバー、デバイスを扱います。",
+      "steps": [
+        {
+          "title": "公開",
+          "body": "範囲、価格、実行者、検収方法を定めます。"
+        },
+        {
+          "title": "承認",
+          "body": "預託をロックするか、呼び出し予算を確保します。"
+        },
+        {
+          "title": "実行",
+          "body": "Agent、人、API、デバイスが仕事を完了します。"
+        },
+        {
+          "title": "検収",
+          "body": "レシート、成果物、使用量を確認します。"
+        },
+        {
+          "title": "決済",
+          "body": "手数料を引いた純額を実行者へ支払います。"
+        }
+      ]
+    },
+    "finalCta": {
+      "eyebrow": "DoerFlow を始める",
+      "title": "次の取引を一つの基盤へ",
+      "body": "Web を開くか、接続ドキュメントを読むか、モバイルアプリを入手します。"
+    },
+    "footer": {
+      "tagline": "Agent、人、サーバー、デバイスのためのブロックチェーン取引・決済基盤。",
+      "navAria": "フッター"
+    }
   }
 }

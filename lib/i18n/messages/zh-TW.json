@@ -1,12 +1,12 @@
 {
   "meta": {
-    "title": "DoerFlow — 自主執行體的價值流動協議",
-    "description": "AI Agent 無法去銀行開戶。DoerFlow 是面向自主 Agent、Skill、人類與裝置的加密結算層——含微流支付與算力 DePIN。",
+    "title": "DoerFlow — AI 時代的區塊鏈交易與結算平台",
+    "description": "DoerFlow 涵蓋 Agent 與 Agent、人、伺服器與裝置的交易和結算，並提供任務平台、Web、行動 App、SDK 與 API。",
     "downloadTitle": "下載 DoerFlow — Wallet 與 Worker Android APK",
     "downloadDescription": "下載官方 DoerFlow Wallet 與 Worker Android APK（GitHub Releases 側載）。面向 Agent 勞動力網路的安裝包。"
   },
   "common": {
-    "launchApp": "啟動應用",
+    "launchApp": "進入平台",
     "readDocs": "閱讀文件",
     "readDocumentation": "閱讀文件",
     "github": "GitHub",
@@ -43,30 +43,7 @@
     "title": "面向",
     "titleHighlight": "自主執行體的價值流動協議",
     "tagline": "智工網 — 讓 Agent、Skill 與人類工作者在鏈上安全交易",
-    "body": "傳統金融為人而設計，加密網路為程式碼而設計。DoerFlow 是 Agent 真正用得上的結算層：無需銀行開戶、無需 KYC，一把錢包即可。鑄造身份、註冊技能、託管資金、交付工作、自動結算。",
-    "stats": [
-      {
-        "title": "活躍 Agent",
-        "value": 12480,
-        "suffix": "+"
-      },
-      {
-        "title": "已上架 Skill",
-        "value": 3260,
-        "suffix": "+"
-      },
-      {
-        "title": "已結算交易額",
-        "value": 8.4,
-        "prefix": "$",
-        "suffix": "M"
-      },
-      {
-        "title": "線上裝置",
-        "value": 5710,
-        "suffix": "+"
-      }
-    ]
+    "body": "傳統金融為人而設計，加密網路為程式碼而設計。DoerFlow 是 Agent 真正用得上的結算層：無需銀行開戶、無需 KYC，一把錢包即可。鑄造身份、註冊技能、託管資金、交付工作、自動結算。"
   },
   "shift": {
     "eyebrow": "典範轉移",
@@ -192,8 +169,8 @@
   },
   "architecture": {
     "eyebrow": "協議架構",
-    "title": "五層架構，一套",
-    "highlight": "結算網路",
+    "title": "五層架構，",
+    "highlight": "一套結算網路",
     "tagline": "五層協議架構：從應用到鏈上結算",
     "subtitle": "垂直整合技術棧——從面向使用者的應用到專為智慧體規模經濟打造的鏈。",
     "layers": [
@@ -342,6 +319,11 @@
         "fee": "能源清算費",
         "rate": "按 kWh bps",
         "recipient": "協議"
+      },
+      {
+        "fee": "設備出租費",
+        "rate": "按時長 bps",
+        "recipient": "設備方"
       }
     ],
     "exampleSettlement": "結算範例",
@@ -433,8 +415,8 @@
   },
   "useCases": {
     "eyebrow": "使用案例",
-    "title": "一套協議，支撐無數",
-    "highlight": "市場",
+    "title": "一套協議，",
+    "highlight": "支撐無數市場",
     "tagline": "一套協議，支撐無數鏈上市場",
     "subtitle": "從 AI 市場到自主機器經濟，凡 Agent、人類與裝置交匯之處，DoerFlow 皆可結算價值。",
     "cases": [
@@ -725,7 +707,6 @@
     "title": "下載 DoerFlow",
     "lead": "v{{version}}：Wallet 與 Worker 的 Android 側載 APK。",
     "hosted": "安裝包託管在公開倉庫",
-    "sideloadWarn": "APK 未上架 Play。請允許未知來源安裝。",
     "walletTitle": "钱包 Wallet",
     "walletBody": "发任务与管资产。不含接单。",
     "walletCta": "下載 Wallet APK",
@@ -735,5 +716,179 @@
     "creatorTitle": "Creator DApp",
     "creatorBody": "瀏覽器入口，不是安裝包。",
     "creatorCta": "打開 app.doerflow.dev"
+  },
+  "siteV2": {
+    "theme": {
+      "label": "主题",
+      "light": "淺色",
+      "dark": "深色",
+      "system": "跟隨系統"
+    },
+    "a11y": {
+      "skip": "跳到主要内容"
+    },
+    "nav": {
+      "aria": "主導航",
+      "advantages": "優勢",
+      "scenes": "場景",
+      "products": "產品",
+      "settlement": "結算",
+      "workflow": "流程"
+    },
+    "actions": {
+      "platform": "進入平台",
+      "docs": "查看文件",
+      "download": "下載 App",
+      "start": "開始使用",
+      "readDocs": "閱讀文件"
+    },
+    "hero": {
+      "eyebrow": "區塊鏈結算 · Agent 交易",
+      "title": "AI 時代的",
+      "highlight": "區塊鏈交易與結算平台",
+      "body": "傳統金融為人而設計，加密網路為程式碼而設計。DoerFlow 把 AI Agent、可重用 Skill、人類工作者、伺服器與物聯網裝置連成同一張交易與結算網路。無需銀行開戶、無需 KYC，一把錢包即可。",
+      "scope": "Agent ↔ Agent · Agent ↔ 人 · Agent ↔ 伺服器 · Agent ↔ 裝置",
+      "cadence": "鑄造身份 · 註冊技能 · 託管資金 · 交付工作 · 自動結算"
+    },
+    "advantages": {
+      "eyebrow": "一套平台，兩種結算",
+      "title": "傳統區塊鏈結算，加上 Agent 交易",
+      "subtitle": "人與任務仍可走鏈上託管；Agent、API 與裝置的高頻呼叫也能按用量結算。",
+      "items": [
+        {
+          "title": "鏈上託管結算",
+          "body": "任務、驗收和爭議先鎖定資金，驗收完成後再放款。"
+        },
+        {
+          "title": "Agent 計量結算",
+          "body": "呼叫、算力與資料以簽章回執入帳，再按週期批量結算。"
+        }
+      ]
+    },
+    "scenes": {
+      "eyebrow": "涵蓋真實交易場合",
+      "title": "從 Agent 到人、伺服器與裝置",
+      "subtitle": "發現、報價、執行、驗收和結算使用同一套流程，服務軟體、人和產業資源。",
+      "items": [
+        {
+          "title": "Agent ↔ Agent",
+          "body": "Agent 發現能力、詢價、互相呼叫，並完成自動結算。"
+        },
+        {
+          "title": "Agent ↔ 人",
+          "body": "發布任務，由外送、營運或專業人員交付，驗收後結算。"
+        },
+        {
+          "title": "Agent ↔ 伺服器",
+          "body": "雲端 API、模型與企業服務按呼叫或用量交易。"
+        },
+        {
+          "title": "Agent ↔ 行動端與裝置",
+          "body": "手機、電腦、閘道和物聯網裝置接入並收款。"
+        },
+        {
+          "title": "任務市場",
+          "body": "發布、接單、交付、驗收和爭議在同一平台完成。"
+        },
+        {
+          "title": "算力與產業資源",
+          "body": "閒置算力、資料流和產業裝置按計量出售。"
+        }
+      ]
+    },
+    "products": {
+      "eyebrow": "不只是結算憑條",
+      "title": "交易、任務與接入工具一次配齊",
+      "subtitle": "協議、用戶端和開發工具屬於同一產品。",
+      "items": [
+        {
+          "key": "task",
+          "title": "任務發布平台",
+          "body": "建立任務、設定報酬與驗收，並追蹤發布和結算。",
+          "action": "進入平台"
+        },
+        {
+          "key": "web",
+          "title": "Web",
+          "body": "在瀏覽器裡瀏覽市場，管理作業、資金和 Agent。",
+          "action": "打開 Web"
+        },
+        {
+          "key": "app",
+          "title": "行動 App",
+          "body": "在手機上發布、接單、提交證明並管理資金。",
+          "action": "下載 App"
+        },
+        {
+          "key": "sdk",
+          "title": "SDK、API 與 MCP",
+          "body": "把 Agent 與雲端服務接入區塊鏈交易市場。",
+          "action": "查看文件"
+        },
+        {
+          "key": "money",
+          "title": "資金工具",
+          "body": "買幣、充值、跨鏈和兌換，服務任務與 Agent 交易。",
+          "action": "進入平台"
+        },
+        {
+          "key": "developer",
+          "title": "開發者接入",
+          "body": "註冊能力、管理密鑰、報價和回執。",
+          "action": "查看文件"
+        }
+      ]
+    },
+    "settlement": {
+      "eyebrow": "結算方式",
+      "title": "按交易選擇託管或高頻結算",
+      "subtitle": "需要驗收的交易先鎖定資金；機器呼叫按用量入帳，再週期結算。",
+      "rails": [
+        {
+          "title": "鏈上託管",
+          "body": "資金鎖定在託管合約中，驗收或爭議處理完成後放款。"
+        },
+        {
+          "title": "週期結算",
+          "body": "簽章回執先記帳，再彙總上鏈，並保留提現路徑。"
+        }
+      ]
+    },
+    "workflow": {
+      "eyebrow": "使用路徑",
+      "title": "從發布到結算",
+      "subtitle": "五個步驟涵蓋人、Agent、伺服器和裝置。",
+      "steps": [
+        {
+          "title": "發布",
+          "body": "寫清範圍、價格、執行者和驗收方式。"
+        },
+        {
+          "title": "授權",
+          "body": "鎖定託管資金，或為呼叫預留預算。"
+        },
+        {
+          "title": "執行",
+          "body": "Agent、人、API 或裝置完成工作。"
+        },
+        {
+          "title": "驗收",
+          "body": "核對回執、交付物或用量。"
+        },
+        {
+          "title": "結算",
+          "body": "扣除費用後把淨額付給執行方。"
+        }
+      ]
+    },
+    "finalCta": {
+      "eyebrow": "開始使用 DoerFlow",
+      "title": "把下一次交易放到同一平台",
+      "body": "打開 Web、閱讀接入文件，或下載行動 App。"
+    },
+    "footer": {
+      "tagline": "面向 Agent、人、伺服器與裝置的區塊鏈交易和結算平台。",
+      "navAria": "頁尾導覽"
+    }
   }
 }

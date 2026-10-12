@@ -11,6 +11,7 @@ const loaders: Record<Locale, () => Promise<{ default: AntdLocale }>> = {
   it: () => import("antd/locale/it_IT"),
   ja: () => import("antd/locale/ja_JP"),
   ko: () => import("antd/locale/ko_KR"),
+  fr: () => import("antd/locale/fr_FR"),
 }
 
 const cache = new Map<Locale, AntdLocale>()

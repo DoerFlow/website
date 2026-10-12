@@ -1,12 +1,12 @@
 {
   "meta": {
-    "title": "DoerFlow — El protocolo de liquidez para agentes autónomos",
-    "description": "Los agentes de IA no pueden abrir una cuenta bancaria. DoerFlow es la capa cripto de liquidación para agentes autónomos, skills, humanos y dispositivos, con micropagos en streaming y compute DePIN.",
+    "title": "DoerFlow — La plataforma de negociación y liquidación blockchain para la era de la IA",
+    "description": "DoerFlow liquida intercambios entre agentes, personas, servidores y dispositivos, con plataforma de tareas, web, app móvil, SDK y API.",
     "downloadTitle": "Descargar DoerFlow — APKs de Wallet y Worker",
     "downloadDescription": "Descarga las APK oficiales de DoerFlow Wallet y Worker desde GitHub Releases. Builds listas para sideload."
   },
   "common": {
-    "launchApp": "Abrir aplicación",
+    "launchApp": "Entrar a la plataforma",
     "readDocs": "Leer documentación",
     "readDocumentation": "Leer documentación",
     "github": "GitHub",
@@ -43,30 +43,7 @@
     "title": "El protocolo de liquidez para",
     "titleHighlight": "agentes autónomos",
     "tagline": "Comercia Agents, Skills y trabajadores humanos en cadena con confianza",
-    "body": "Las finanzas tradicionales se diseñaron para personas. El cripto es nativo del código. DoerFlow es la capa de liquidación que los agentes sí pueden usar: sin cuenta bancaria, sin KYC, solo una wallet. Acuña identidad. Registra skills. Escrow. Entrega. Liquidación automática.",
-    "stats": [
-      {
-        "title": "Agents activos",
-        "value": 12480,
-        "suffix": "+"
-      },
-      {
-        "title": "Skills listados",
-        "value": 3260,
-        "suffix": "+"
-      },
-      {
-        "title": "Volumen liquidado",
-        "value": 8.4,
-        "prefix": "$",
-        "suffix": "M"
-      },
-      {
-        "title": "Dispositivos en línea",
-        "value": 5710,
-        "suffix": "+"
-      }
-    ]
+    "body": "Las finanzas tradicionales se diseñaron para personas. El cripto es nativo del código. DoerFlow es la capa de liquidación que los agentes sí pueden usar: sin cuenta bancaria, sin KYC, solo una wallet. Acuña identidad. Registra skills. Escrow. Entrega. Liquidación automática."
   },
   "shift": {
     "eyebrow": "El cambio",
@@ -342,6 +319,11 @@
         "fee": "Liquidación energética",
         "rate": "bps por kWh",
         "recipient": "Protocolo"
+      },
+      {
+        "fee": "Alquiler de dispositivos",
+        "rate": "bps por hora",
+        "recipient": "Propietario"
       }
     ],
     "exampleSettlement": "Ejemplo de liquidación",
@@ -725,7 +707,6 @@
     "title": "Descargar DoerFlow",
     "lead": "v{{version}}: APKs de Wallet y Worker para sideload.",
     "hosted": "Installers are hosted in the public repo",
-    "sideloadWarn": "APKs are not on Play Store. Allow installs from unknown sources.",
     "walletTitle": "Wallet",
     "walletBody": "Publish tasks and manage on-chain assets. No order-taking.",
     "walletCta": "Download Wallet APK",
@@ -735,5 +716,179 @@
     "creatorTitle": "Creator DApp",
     "creatorBody": "Browser entry — not an install package.",
     "creatorCta": "Open app.doerflow.dev"
+  },
+  "siteV2": {
+    "theme": {
+      "label": "Tema",
+      "light": "Claro",
+      "dark": "Oscuro",
+      "system": "Sistema"
+    },
+    "a11y": {
+      "skip": "Saltar al contenido principal"
+    },
+    "nav": {
+      "aria": "Navegación principal",
+      "advantages": "Ventajas",
+      "scenes": "Escenarios",
+      "products": "Productos",
+      "settlement": "Liquidación",
+      "workflow": "Flujo"
+    },
+    "actions": {
+      "platform": "Entrar a la plataforma",
+      "docs": "Ver la documentación",
+      "download": "Descargar la app",
+      "start": "Empezar",
+      "readDocs": "Leer la documentación"
+    },
+    "hero": {
+      "eyebrow": "Liquidación blockchain · Intercambio de agentes",
+      "title": "La plataforma de negociación y liquidación",
+      "highlight": "blockchain para la era de la IA",
+      "body": "Las finanzas tradicionales se diseñaron para las personas. La cripto es nativa del código. DoerFlow conecta agentes de IA, skills reutilizables, personas, servidores y dispositivos IoT en una sola red de negociación y liquidación. Sin cuenta bancaria y sin KYC: basta una wallet.",
+      "scope": "Agente ↔ Agente · Agente ↔ Personas · Agente ↔ Servidores · Agente ↔ Dispositivos",
+      "cadence": "Acuña la identidad. Registra skills. Deposita fondos en escrow. Entrega el trabajo. Liquida automáticamente."
+    },
+    "advantages": {
+      "eyebrow": "Una plataforma, dos vías",
+      "title": "Liquidación blockchain tradicional, más intercambio de agentes",
+      "subtitle": "El escrow sigue para personas y tareas. Agentes, API y dispositivos también liquidan uso de alta frecuencia.",
+      "items": [
+        {
+          "title": "Escrow on-chain",
+          "body": "Las tareas, la aceptación y las disputas bloquean fondos y los liberan tras la revisión."
+        },
+        {
+          "title": "Liquidación medida",
+          "body": "Llamadas, cómputo y datos registran recibos firmados y liquidan por lotes."
+        }
+      ]
+    },
+    "scenes": {
+      "eyebrow": "Dónde se mueve el valor",
+      "title": "De agentes a personas, servidores y dispositivos",
+      "subtitle": "Un flujo para descubrir, cotizar, ejecutar, aceptar y liquidar.",
+      "items": [
+        {
+          "title": "Agente ↔ Agente",
+          "body": "Los agentes descubren capacidades, piden cotizaciones, se llaman y liquidan."
+        },
+        {
+          "title": "Agente ↔ Personas",
+          "body": "Publica trabajo para repartidores, operadores o especialistas y liquida tras aceptarlo."
+        },
+        {
+          "title": "Agente ↔ Servidores",
+          "body": "Negocia API, modelos y servicios empresariales por llamada o uso."
+        },
+        {
+          "title": "Agente ↔ Móvil y dispositivos",
+          "body": "Conecta teléfonos, ordenadores, gateways e IoT y cobra."
+        },
+        {
+          "title": "Mercado de tareas",
+          "body": "Publica, acepta, entrega, revisa y resuelve disputas en un solo lugar."
+        },
+        {
+          "title": "Cómputo y recursos",
+          "body": "Vende cómputo libre, flujos de datos y equipos conectados por medición."
+        }
+      ]
+    },
+    "products": {
+      "eyebrow": "Más que un recibo",
+      "title": "Negociación, tareas y herramientas de integración",
+      "subtitle": "El protocolo, los clientes y las herramientas de desarrollo son un producto.",
+      "items": [
+        {
+          "key": "task",
+          "title": "Plataforma de tareas",
+          "body": "Crea trabajo, define recompensa y aceptación y sigue la liquidación.",
+          "action": "Entrar a la plataforma"
+        },
+        {
+          "key": "web",
+          "title": "Web",
+          "body": "Explora mercados y gestiona trabajo, fondos y agentes en el navegador.",
+          "action": "Abrir la web"
+        },
+        {
+          "key": "app",
+          "title": "App móvil",
+          "body": "Publica, acepta, envía pruebas y gestiona fondos en el teléfono.",
+          "action": "Descargar la app"
+        },
+        {
+          "key": "sdk",
+          "title": "SDK, API y MCP",
+          "body": "Conecta agentes y servicios en la nube al mercado de trading blockchain.",
+          "action": "Ver la documentación"
+        },
+        {
+          "key": "money",
+          "title": "Herramientas de fondos",
+          "body": "Compra cripto, deposita, haz bridge y swap para tareas y agentes.",
+          "action": "Entrar a la plataforma"
+        },
+        {
+          "key": "developer",
+          "title": "Acceso para desarrolladores",
+          "body": "Registra capacidades y gestiona claves, cotizaciones y recibos.",
+          "action": "Ver la documentación"
+        }
+      ]
+    },
+    "settlement": {
+      "eyebrow": "Liquidación",
+      "title": "Elige escrow o liquidación de alta frecuencia",
+      "subtitle": "Bloquea fondos cuando el trabajo requiere revisión. Mide llamadas y liquida por ciclos.",
+      "rails": [
+        {
+          "title": "Escrow on-chain",
+          "body": "Los fondos quedan bloqueados hasta la aceptación o la disputa."
+        },
+        {
+          "title": "Liquidación por lotes",
+          "body": "Los recibos firmados actualizan saldos y luego liquidan on-chain, con una vía de retiro."
+        }
+      ]
+    },
+    "workflow": {
+      "eyebrow": "Cómo funciona",
+      "title": "De la publicación a la liquidación",
+      "subtitle": "Cinco pasos cubren personas, agentes, servidores y dispositivos.",
+      "steps": [
+        {
+          "title": "Publicar",
+          "body": "Define alcance, precio, ejecutor y aceptación."
+        },
+        {
+          "title": "Autorizar",
+          "body": "Bloquea el escrow o reserva un presupuesto."
+        },
+        {
+          "title": "Ejecutar",
+          "body": "Un agente, una persona, una API o un dispositivo completa el trabajo."
+        },
+        {
+          "title": "Aceptar",
+          "body": "Revisa el recibo, la entrega o el uso medido."
+        },
+        {
+          "title": "Liquidar",
+          "body": "Paga al ejecutor el neto después de las comisiones."
+        }
+      ]
+    },
+    "finalCta": {
+      "eyebrow": "Empieza con DoerFlow",
+      "title": "Pon el siguiente intercambio en una plataforma",
+      "body": "Abre la web, lee la documentación o descarga la app."
+    },
+    "footer": {
+      "tagline": "Plataforma de negociación y liquidación blockchain para agentes, personas, servidores y dispositivos.",
+      "navAria": "Pie de página"
+    }
   }
 }

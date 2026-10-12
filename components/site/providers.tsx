@@ -7,10 +7,12 @@ import { useEffect, useState, type ReactNode } from "react"
 import { loadAntdLocale } from "@/lib/antd-locale"
 import type { Locale } from "@/lib/i18n/config"
 import { I18nProvider, useI18n } from "@/lib/i18n/context"
-import { darkTheme } from "@/lib/theme"
+import { antdTheme } from "@/lib/theme"
+import { ThemeProvider, useTheme } from "@/lib/theme-context"
 
-function AntdLocaleBridge({ children }: { children: ReactNode }) {
+function AntdBridge({ children }: { children: ReactNode }) {
   const { locale } = useI18n()
+  const { resolved } = useTheme()
   const [antdLocale, setAntdLocale] = useState<AntdLocale | null>(null)
 
   useEffect(() => {
@@ -24,7 +26,7 @@ function AntdLocaleBridge({ children }: { children: ReactNode }) {
   }, [locale])
 
   return (
-    <ConfigProvider theme={darkTheme} locale={antdLocale ?? undefined}>
+    <ConfigProvider theme={antdTheme(resolved === "dark")} locale={antdLocale ?? undefined}>
       <AntdApp>{children}</AntdApp>
     </ConfigProvider>
   )
@@ -39,9 +41,11 @@ export function Providers({
 }) {
   return (
     <I18nProvider initialLocale={initialLocale}>
-      <AntdRegistry>
-        <AntdLocaleBridge>{children}</AntdLocaleBridge>
-      </AntdRegistry>
+      <ThemeProvider>
+        <AntdRegistry>
+          <AntdBridge>{children}</AntdBridge>
+        </AntdRegistry>
+      </ThemeProvider>
     </I18nProvider>
   )
 }
