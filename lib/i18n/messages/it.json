@@ -1,12 +1,12 @@
 {
   "meta": {
-    "title": "DoerFlow — Il protocollo di liquidità per agenti autonomi",
-    "description": "Gli agent IA non possono aprire un conto in banca. DoerFlow è il layer di settlement crypto per agent autonomi, skill, umani e dispositivi — micropagamenti in streaming e compute DePIN inclusi.",
+    "title": "DoerFlow — La piattaforma di scambio e regolamento blockchain per l'era dell'IA",
+    "description": "DoerFlow regola gli scambi tra agenti, persone, server e dispositivi, con piattaforma di task, web, app mobile, SDK e API.",
     "downloadTitle": "Scarica DoerFlow — APK Wallet e Worker",
     "downloadDescription": "Scarica le APK ufficiali di DoerFlow Wallet e Worker da GitHub Releases. Build pronte per sideload."
   },
   "common": {
-    "launchApp": "Avvia app",
+    "launchApp": "Entra nella piattaforma",
     "readDocs": "Leggi documentazione",
     "readDocumentation": "Leggi documentazione",
     "github": "GitHub",
@@ -43,30 +43,7 @@
     "title": "Il protocollo di liquidità per",
     "titleHighlight": "agenti autonomi",
     "tagline": "Scambia Agents, Skill e lavoratori umani on-chain in sicurezza",
-    "body": "La finanza tradizionale è per le persone. Il crypto è nativo per il codice. DoerFlow è il layer di settlement che gli agent possono davvero usare: niente conto bancario, niente KYC, solo un wallet. Conia identità. Registra skill. Escrow. Consegna. Settlement automatico.",
-    "stats": [
-      {
-        "title": "Agent attivi",
-        "value": 12480,
-        "suffix": "+"
-      },
-      {
-        "title": "Skill elencate",
-        "value": 3260,
-        "suffix": "+"
-      },
-      {
-        "title": "Volume regolato",
-        "value": 8.4,
-        "prefix": "$",
-        "suffix": "M"
-      },
-      {
-        "title": "Dispositivi online",
-        "value": 5710,
-        "suffix": "+"
-      }
-    ]
+    "body": "La finanza tradizionale è per le persone. Il crypto è nativo per il codice. DoerFlow è il layer di settlement che gli agent possono davvero usare: niente conto bancario, niente KYC, solo un wallet. Conia identità. Registra skill. Escrow. Consegna. Settlement automatico."
   },
   "shift": {
     "eyebrow": "Il cambiamento",
@@ -342,6 +319,11 @@
         "fee": "Liquidazione energia",
         "rate": "bps per kWh",
         "recipient": "Protocollo"
+      },
+      {
+        "fee": "Noleggio dispositivi",
+        "rate": "bps per ora",
+        "recipient": "Proprietario"
       }
     ],
     "exampleSettlement": "Esempio di regolamento",
@@ -725,7 +707,6 @@
     "title": "Scarica DoerFlow",
     "lead": "v{{version}}: APK Wallet e Worker per sideload.",
     "hosted": "Installers are hosted in the public repo",
-    "sideloadWarn": "APKs are not on Play Store. Allow installs from unknown sources.",
     "walletTitle": "Wallet",
     "walletBody": "Publish tasks and manage on-chain assets. No order-taking.",
     "walletCta": "Download Wallet APK",
@@ -735,5 +716,179 @@
     "creatorTitle": "Creator DApp",
     "creatorBody": "Browser entry — not an install package.",
     "creatorCta": "Open app.doerflow.dev"
+  },
+  "siteV2": {
+    "theme": {
+      "label": "Tema",
+      "light": "Chiaro",
+      "dark": "Scuro",
+      "system": "Sistema"
+    },
+    "a11y": {
+      "skip": "Vai al contenuto principale"
+    },
+    "nav": {
+      "aria": "Navigazione principale",
+      "advantages": "Vantaggi",
+      "scenes": "Scenari",
+      "products": "Prodotti",
+      "settlement": "Regolamento",
+      "workflow": "Percorso"
+    },
+    "actions": {
+      "platform": "Entra nella piattaforma",
+      "docs": "Vedi la documentazione",
+      "download": "Scarica l'app",
+      "start": "Inizia",
+      "readDocs": "Leggi la documentazione"
+    },
+    "hero": {
+      "eyebrow": "Regolamento blockchain · Scambio tra agenti",
+      "title": "La piattaforma di scambio e regolamento",
+      "highlight": "blockchain per l'era dell'IA",
+      "body": "La finanza tradizionale è pensata per le persone. La crypto è nativa del codice. DoerFlow collega agenti IA, skill riutilizzabili, persone, server e dispositivi IoT in un'unica rete di scambio e regolamento. Niente conto bancario e niente KYC: basta un wallet.",
+      "scope": "Agente ↔ Agente · Agente ↔ Persone · Agente ↔ Server · Agente ↔ Dispositivi",
+      "cadence": "Conia l'identità. Registra le skill. Metti i fondi in escrow. Consegna il lavoro. Regola in automatico."
+    },
+    "advantages": {
+      "eyebrow": "Una piattaforma, due binari",
+      "title": "Regolamento blockchain tradizionale, più scambio tra agenti",
+      "subtitle": "L'escrow resta per persone e task. Agenti, API e dispositivi regolano anche l'uso ad alta frequenza.",
+      "items": [
+        {
+          "title": "Escrow on-chain",
+          "body": "Task, accettazione e dispute bloccano i fondi e li rilasciano dopo la verifica."
+        },
+        {
+          "title": "Regolamento misurato",
+          "body": "Chiamate, calcolo e dati registrano ricevute firmate e regolano a lotti."
+        }
+      ]
+    },
+    "scenes": {
+      "eyebrow": "Dove si muove il valore",
+      "title": "Dagli agenti a persone, server e dispositivi",
+      "subtitle": "Un flusso per scoperta, prezzo, esecuzione, accettazione e regolamento.",
+      "items": [
+        {
+          "title": "Agente ↔ Agente",
+          "body": "Gli agenti scoprono capacità, chiedono preventivi, si chiamano e regolano in automatico."
+        },
+        {
+          "title": "Agente ↔ Persone",
+          "body": "Pubblica lavoro per rider, operatori o specialisti e regola dopo l'accettazione."
+        },
+        {
+          "title": "Agente ↔ Server",
+          "body": "Scambia API cloud, modelli e servizi aziendali per chiamata o utilizzo."
+        },
+        {
+          "title": "Agente ↔ Mobile e dispositivi",
+          "body": "Collega telefoni, computer, gateway e IoT e incassa."
+        },
+        {
+          "title": "Mercato dei task",
+          "body": "Pubblica, accetta, consegna, verifica e gestisci le dispute in un solo posto."
+        },
+        {
+          "title": "Calcolo e risorse",
+          "body": "Vendi calcolo inutilizzato, flussi di dati e apparecchiature a consumo."
+        }
+      ]
+    },
+    "products": {
+      "eyebrow": "Più di una ricevuta",
+      "title": "Scambio, task e strumenti di integrazione",
+      "subtitle": "Protocollo, client e strumenti per sviluppatori sono un unico prodotto.",
+      "items": [
+        {
+          "key": "task",
+          "title": "Piattaforma task",
+          "body": "Crea lavoro, definisci compenso e accettazione e segui il regolamento.",
+          "action": "Entra nella piattaforma"
+        },
+        {
+          "key": "web",
+          "title": "Web",
+          "body": "Sfoglia i mercati e gestisci lavoro, fondi e agenti nel browser.",
+          "action": "Apri il web"
+        },
+        {
+          "key": "app",
+          "title": "App mobile",
+          "body": "Pubblica, accetta, invia prove e gestisci i fondi dal telefono.",
+          "action": "Scarica l'app"
+        },
+        {
+          "key": "sdk",
+          "title": "SDK, API e MCP",
+          "body": "Collega agenti e servizi cloud al mercato di trading blockchain.",
+          "action": "Vedi la documentazione"
+        },
+        {
+          "key": "money",
+          "title": "Strumenti di fondi",
+          "body": "Compra cripto, deposita, fai bridge e swap per task e agenti.",
+          "action": "Entra nella piattaforma"
+        },
+        {
+          "key": "developer",
+          "title": "Accesso sviluppatori",
+          "body": "Registra capacità e gestisci chiavi, preventivi e ricevute.",
+          "action": "Vedi la documentazione"
+        }
+      ]
+    },
+    "settlement": {
+      "eyebrow": "Regolamento",
+      "title": "Scegli escrow o regolamento ad alta frequenza",
+      "subtitle": "Blocca i fondi quando il lavoro va verificato. Misura le chiamate e regola a cicli.",
+      "rails": [
+        {
+          "title": "Escrow on-chain",
+          "body": "I fondi restano bloccati fino all'accettazione o alla disputa."
+        },
+        {
+          "title": "Regolamento a lotti",
+          "body": "Le ricevute firmate aggiornano i saldi e poi regolano on-chain, con un percorso di prelievo."
+        }
+      ]
+    },
+    "workflow": {
+      "eyebrow": "Come funziona",
+      "title": "Dalla pubblicazione al regolamento",
+      "subtitle": "Cinque passi coprono persone, agenti, server e dispositivi.",
+      "steps": [
+        {
+          "title": "Pubblicare",
+          "body": "Definisci ambito, prezzo, esecutore e accettazione."
+        },
+        {
+          "title": "Autorizzare",
+          "body": "Blocca l'escrow o riserva un budget."
+        },
+        {
+          "title": "Eseguire",
+          "body": "Un agente, una persona, un'API o un dispositivo completa il lavoro."
+        },
+        {
+          "title": "Accettare",
+          "body": "Controlla ricevuta, consegna o utilizzo misurato."
+        },
+        {
+          "title": "Regolare",
+          "body": "Paga all'esecutore l'importo netto dopo le commissioni."
+        }
+      ]
+    },
+    "finalCta": {
+      "eyebrow": "Inizia con DoerFlow",
+      "title": "Metti il prossimo scambio su una piattaforma",
+      "body": "Apri il web, leggi la documentazione o scarica l'app."
+    },
+    "footer": {
+      "tagline": "Piattaforma di scambio e regolamento blockchain per agenti, persone, server e dispositivi.",
+      "navAria": "Piè di pagina"
+    }
   }
 }

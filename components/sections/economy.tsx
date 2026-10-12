@@ -52,10 +52,10 @@ export function Economy() {
         subtitle={t("economy.subtitle")}
       />
 
-      <Row gutter={[24, 24]}>
-        <Col xs={24} lg={14}>
+      <Row gutter={[24, 24]} align="stretch">
+        <Col xs={24} lg={14} style={{ display: "flex", flexDirection: "column" }}>
           <Reveal>
-            <Card className="df-glass" variant="borderless" styles={{ body: { padding: 8 } }}>
+            <Card className="df-glass" variant="borderless" style={{ width: "100%", height: "100%" }} styles={{ body: { padding: 8, height: "100%" } }}>
               <div className="df-table-scroll">
                 <Table
                   columns={columns}
@@ -70,9 +70,9 @@ export function Economy() {
           </Reveal>
         </Col>
 
-        <Col xs={24} lg={10}>
+        <Col xs={24} lg={10} style={{ display: "flex", flexDirection: "column" }}>
           <Reveal delay={0.1}>
-            <Card className="df-glass" variant="borderless" style={{ height: "100%" }} styles={{ body: { padding: 28 } }}>
+            <Card className="df-glass" variant="borderless" style={{ width: "100%", height: "100%" }} styles={{ body: { padding: 28, height: "100%" } }}>
               <Text style={{ color: COLORS.muted, fontSize: 13 }}>{t("economy.exampleSettlement")}</Text>
               <Title level={4} style={{ margin: "4px 0 18px", color: COLORS.text }}>
                 {t("economy.consumerPays")}{" "}

@@ -1,47 +1,33 @@
-@use "tokens" as *;
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  overflow-x: clip;
-}
-
-html,
-body {
+* { box-sizing: border-box; }
+html { overflow-x: clip; scroll-behavior: smooth; }
+html, body {
   margin: 0;
   padding: 0;
   max-width: 100%;
-  background-color: var(--df-bg);
+  background: var(--df-bg);
   color: var(--df-text);
   font-family: var(--font-inter), "PingFang SC", "Microsoft YaHei", sans-serif;
-  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
 }
-
-body {
-  overflow-x: clip;
+body { overflow-x: clip; transition: background-color 0.2s ease, color 0.2s ease; }
+::selection { background: var(--df-primary-soft); }
+a, button, input { font: inherit; }
+a:focus-visible, button:focus-visible, input:focus-visible, [tabindex]:focus-visible {
+  outline: 3px solid var(--df-focus);
+  outline-offset: 3px;
 }
-
-::selection {
-  background: rgba(0, 212, 170, 0.3);
+.df-skip-link {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 2000;
+  padding: 10px 14px;
+  background: var(--df-surface);
+  color: var(--df-text);
+  border: 1px solid var(--df-border-strong);
+  border-radius: 8px;
+  transform: translateY(-160%);
 }
-
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--df-bg);
-}
-
-::-webkit-scrollbar-thumb {
-  background: #2a3550;
-  border-radius: 6px;
-
-  &:hover {
-    background: #36436a;
-  }
-}
+.df-skip-link:focus { transform: translateY(0); }
+.ant-btn { min-height: 44px; }
+.ant-btn-sm { min-height: 32px; }

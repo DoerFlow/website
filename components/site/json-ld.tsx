@@ -71,6 +71,7 @@ export function JsonLd({ locale, page = "home" }: { locale: Locale; page?: "home
   return (
     <script
       type="application/ld+json"
+      // biome-ignore lint/security/noDangerouslySetInnerHtml: serialized static metadata, not user input
       dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
     />
   )

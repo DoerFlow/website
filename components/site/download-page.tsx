@@ -2,11 +2,12 @@
 
 import { useEffect, useState } from "react"
 import { AndroidOutlined, DownloadOutlined, GlobalOutlined } from "@ant-design/icons"
-import { Alert, Button, Space, Typography } from "antd"
+import { Button, Space, Typography } from "antd"
 import { Header } from "@/components/site/header"
 import { Footer } from "@/components/sections/footer"
 import { useT } from "@/lib/i18n/context"
 import { COLORS } from "@/lib/theme"
+import { APP_URL } from "@/lib/urls"
 
 const RELEASE_BASE =
   process.env.NEXT_PUBLIC_RELEASE_BASE ??
@@ -40,8 +41,10 @@ export function DownloadPage() {
   }, [])
 
   return (
-    <main>
+    <>
+      <a className="df-skip-link" href="#main-content">{t("siteV2.a11y.skip")}</a>
       <Header />
+      <main id="main-content">
       <div className="df-download">
         <Typography.Title level={1} className="df-download-title" style={{ color: COLORS.text }}>
           {t("download.title")}
@@ -55,12 +58,6 @@ export function DownloadPage() {
             DoerFlow/downloads
           </a>
         </Typography.Paragraph>
-        <Alert
-          type="warning"
-          showIcon
-          className="df-download-alert"
-          message={t("download.sideloadWarn")}
-        />
         <Space direction="vertical" size="large" style={{ width: "100%" }}>
           <section className="df-download-card">
             <Typography.Title level={3} style={{ color: COLORS.text, marginTop: 0 }}>
@@ -91,13 +88,14 @@ export function DownloadPage() {
             <Typography.Paragraph style={{ color: COLORS.muted }}>
               {t("download.creatorBody")}
             </Typography.Paragraph>
-            <Button href="https://app.doerflow.dev" size="large" target="_blank">
+            <Button href={APP_URL} size="large" target="_blank" rel="noreferrer">
               {t("download.creatorCta")}
             </Button>
           </section>
         </Space>
       </div>
+      </main>
       <Footer />
-    </main>
+    </>
   )
 }

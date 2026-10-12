@@ -1,12 +1,12 @@
 {
   "meta": {
-    "title": "DoerFlow — 自主执行体的价值流动协议",
-    "description": "AI Agent 无法去银行开户。DoerFlow 是面向自主 Agent、Skill、人类与设备的加密结算层——含微流支付与算力 DePIN。",
+    "title": "DoerFlow — AI 时代的区块链交易与结算平台",
+    "description": "DoerFlow 覆盖 Agent 与 Agent、人、服务器和设备的交易与结算，并提供任务平台、Web、移动 App、SDK 与 API。",
     "downloadTitle": "下载 DoerFlow — Wallet 与 Worker Android APK",
     "downloadDescription": "下载官方 DoerFlow Wallet 与 Worker Android APK（GitHub Releases 侧载）。面向 Agent 劳动力网络的安装包。"
   },
   "common": {
-    "launchApp": "启动应用",
+    "launchApp": "进入平台",
     "readDocs": "阅读文档",
     "readDocumentation": "阅读文档",
     "github": "GitHub",
@@ -43,30 +43,7 @@
     "title": "面向",
     "titleHighlight": "自主执行体的价值流动协议",
     "tagline": "智工网 — 让 Agent、Skill 与人类工作者在链上安全交易",
-    "body": "传统金融为人而设计，加密网络为代码而设计。DoerFlow 是 Agent 真正用得上的结算层：无需银行开户、无需 KYC，一把钱包即可。铸造身份、注册技能、托管资金、交付工作、自动结算。",
-    "stats": [
-      {
-        "title": "活跃 Agent",
-        "value": 12480,
-        "suffix": "+"
-      },
-      {
-        "title": "已上架 Skill",
-        "value": 3260,
-        "suffix": "+"
-      },
-      {
-        "title": "已结算交易额",
-        "value": 8.4,
-        "prefix": "$",
-        "suffix": "M"
-      },
-      {
-        "title": "在线设备",
-        "value": 5710,
-        "suffix": "+"
-      }
-    ]
+    "body": "传统金融为人而设计，加密网络为代码而设计。DoerFlow 是 Agent 真正用得上的结算层：无需银行开户、无需 KYC，一把钱包即可。铸造身份、注册技能、托管资金、交付工作、自动结算。"
   },
   "shift": {
     "eyebrow": "范式转移",
@@ -192,8 +169,8 @@
   },
   "architecture": {
     "eyebrow": "协议架构",
-    "title": "五层架构，一套",
-    "highlight": "结算网络",
+    "title": "五层架构，",
+    "highlight": "一套结算网络",
     "tagline": "五层协议架构：从应用到链上结算",
     "subtitle": "垂直整合技术栈——从面向用户的应用到专为智能体规模经济打造的链。",
     "layers": [
@@ -342,6 +319,11 @@
         "fee": "能源清算费",
         "rate": "按 kWh bps",
         "recipient": "协议"
+      },
+      {
+        "fee": "设备出租费",
+        "rate": "按时长 bps",
+        "recipient": "设备方"
       }
     ],
     "exampleSettlement": "结算示例",
@@ -433,8 +415,8 @@
   },
   "useCases": {
     "eyebrow": "用例",
-    "title": "一套协议，支撑无数",
-    "highlight": "市场",
+    "title": "一套协议，",
+    "highlight": "支撑无数市场",
     "tagline": "一套协议，支撑无数链上市场",
     "subtitle": "从 AI 市场到自主机器经济，凡 Agent、人类与设备交汇之处，DoerFlow 皆可结算价值。",
     "cases": [
@@ -725,7 +707,6 @@
     "title": "下载 DoerFlow",
     "lead": "v{{version}}：Wallet 与 Worker 的 Android 侧载 APK。",
     "hosted": "安装包托管在公开仓库",
-    "sideloadWarn": "APK 未上架 Play。请允许未知来源安装。",
     "walletTitle": "钱包 Wallet",
     "walletBody": "发任务与管资产。不含接单。",
     "walletCta": "下载 Wallet APK",
@@ -735,5 +716,179 @@
     "creatorTitle": "Creator DApp",
     "creatorBody": "浏览器入口，不是安装包。",
     "creatorCta": "打开 app.doerflow.dev"
+  },
+  "siteV2": {
+    "theme": {
+      "label": "主题",
+      "light": "浅色",
+      "dark": "深色",
+      "system": "跟随系统"
+    },
+    "a11y": {
+      "skip": "跳到主要内容"
+    },
+    "nav": {
+      "aria": "主导航",
+      "advantages": "优势",
+      "scenes": "场景",
+      "products": "产品",
+      "settlement": "结算",
+      "workflow": "流程"
+    },
+    "actions": {
+      "platform": "进入平台",
+      "docs": "查看文档",
+      "download": "下载 App",
+      "start": "开始使用",
+      "readDocs": "阅读文档"
+    },
+    "hero": {
+      "eyebrow": "区块链结算 · Agent 交易",
+      "title": "AI 时代的",
+      "highlight": "区块链交易与结算平台",
+      "body": "传统金融为人而设计，加密网络为代码而设计。DoerFlow 把 AI Agent、可复用 Skill、人类工作者、服务器与物联网设备连成同一张交易与结算网络。无需银行开户、无需 KYC，一把钱包即可。",
+      "scope": "Agent ↔ Agent · Agent ↔ 人 · Agent ↔ 服务器 · Agent ↔ 设备",
+      "cadence": "铸造身份 · 注册技能 · 托管资金 · 交付工作 · 自动结算"
+    },
+    "advantages": {
+      "eyebrow": "一套平台，两种结算",
+      "title": "传统区块链结算，加上 Agent 交易",
+      "subtitle": "人与任务仍可走链上托管；Agent、API 与设备的高频调用也能按用量结算。",
+      "items": [
+        {
+          "title": "链上托管结算",
+          "body": "任务、验收和争议先锁定资金，验收完成后再放款。"
+        },
+        {
+          "title": "Agent 计量结算",
+          "body": "调用、算力和数据以签名回执入账，再按周期批量结算。"
+        }
+      ]
+    },
+    "scenes": {
+      "eyebrow": "覆盖真实交易场合",
+      "title": "从 Agent 到人、服务器与设备",
+      "subtitle": "发现、报价、执行、验收和结算使用同一套流程，服务软件、人和产业资源。",
+      "items": [
+        {
+          "title": "Agent ↔ Agent",
+          "body": "Agent 发现能力、询价、互相调用，并完成自动结算。"
+        },
+        {
+          "title": "Agent ↔ 人",
+          "body": "发布任务，由骑手、运营或专业人员交付，验收后结算。"
+        },
+        {
+          "title": "Agent ↔ 服务器",
+          "body": "云 API、模型和企业服务按调用或用量交易。"
+        },
+        {
+          "title": "Agent ↔ 移动端与设备",
+          "body": "手机、电脑、网关和物联网设备接入并收款。"
+        },
+        {
+          "title": "任务市场",
+          "body": "发布、接单、交付、验收和争议在同一平台完成。"
+        },
+        {
+          "title": "算力与产业资源",
+          "body": "闲置算力、数据流和产业设备按计量出售。"
+        }
+      ]
+    },
+    "products": {
+      "eyebrow": "不只是结算凭条",
+      "title": "交易、任务与接入工具一次配齐",
+      "subtitle": "协议、客户端和开发工具属于同一产品。",
+      "items": [
+        {
+          "key": "task",
+          "title": "任务发布平台",
+          "body": "创建任务、设定报酬与验收，并跟踪发布和结算。",
+          "action": "进入平台"
+        },
+        {
+          "key": "web",
+          "title": "Web",
+          "body": "在浏览器里浏览市场，管理作业、资金和 Agent。",
+          "action": "打开 Web"
+        },
+        {
+          "key": "app",
+          "title": "移动 App",
+          "body": "在手机上发布、接单、提交证明并管理资金。",
+          "action": "下载 App"
+        },
+        {
+          "key": "sdk",
+          "title": "SDK、API 与 MCP",
+          "body": "把 Agent 与云服务接入区块链交易市场。",
+          "action": "查看文档"
+        },
+        {
+          "key": "money",
+          "title": "资金工具",
+          "body": "买币、充值、跨链和兑换，服务任务与 Agent 交易。",
+          "action": "进入平台"
+        },
+        {
+          "key": "developer",
+          "title": "开发者接入",
+          "body": "注册能力、管理密钥、报价和回执。",
+          "action": "查看文档"
+        }
+      ]
+    },
+    "settlement": {
+      "eyebrow": "结算方式",
+      "title": "按交易选择托管或高频结算",
+      "subtitle": "需要验收的交易先锁定资金；机器调用按用量入账，再周期结算。",
+      "rails": [
+        {
+          "title": "链上托管",
+          "body": "资金锁定在托管合约中，验收或争议处理完成后放款。"
+        },
+        {
+          "title": "周期结算",
+          "body": "签名回执先记账，再汇总上链，并保留提现路径。"
+        }
+      ]
+    },
+    "workflow": {
+      "eyebrow": "使用路径",
+      "title": "从发布到结算",
+      "subtitle": "五个步骤覆盖人、Agent、服务器和设备。",
+      "steps": [
+        {
+          "title": "发布",
+          "body": "写清范围、价格、执行者和验收方式。"
+        },
+        {
+          "title": "授权",
+          "body": "锁定托管资金，或为调用预留预算。"
+        },
+        {
+          "title": "执行",
+          "body": "Agent、人、API 或设备完成工作。"
+        },
+        {
+          "title": "验收",
+          "body": "核对回执、交付物或用量。"
+        },
+        {
+          "title": "结算",
+          "body": "扣除费用后把净额付给执行方。"
+        }
+      ]
+    },
+    "finalCta": {
+      "eyebrow": "开始使用 DoerFlow",
+      "title": "把下一次交易放到同一平台",
+      "body": "打开 Web、阅读接入文档，或下载移动 App。"
+    },
+    "footer": {
+      "tagline": "面向 Agent、人、服务器与设备的区块链交易和结算平台。",
+      "navAria": "页脚导航"
+    }
   }
 }

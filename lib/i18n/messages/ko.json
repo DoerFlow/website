@@ -1,12 +1,12 @@
 {
   "meta": {
-    "title": "DoerFlow — 자율 에이전트를 위한 유동성 프로토콜",
-    "description": "AI 에이전트는 은행 계좌를 열 수 없습니다. DoerFlow는 자율 에이전트, Skill, 인간, 기기를 위한 암호 정산 계층이며 스트리밍 소액 결제와 DePIN 연산을 포함합니다.",
+    "title": "DoerFlow — AI 시대의 블록체인 거래·정산 플랫폼",
+    "description": "DoerFlow는 Agent, 사람, 서버, 기기 간 거래와 정산을 다루며 작업 플랫폼, 웹, 모바일 앱, SDK, API를 제공합니다.",
     "downloadTitle": "DoerFlow 다운로드 — Wallet 및 Worker APK",
     "downloadDescription": "공식 DoerFlow Wallet 및 Worker Android APK를 GitHub Releases에서 다운로드하세요. 사이드로드용 빌드입니다."
   },
   "common": {
-    "launchApp": "앱 실행",
+    "launchApp": "플랫폼으로",
     "readDocs": "문서 읽기",
     "readDocumentation": "문서 읽기",
     "github": "GitHub",
@@ -43,30 +43,7 @@
     "title": "자율 에이전트를 위한",
     "titleHighlight": "유동성 프로토콜",
     "tagline": "Agent, Skill, 인간 워커를 온체인에서 안전하게 거래",
-    "body": "전통 금융은 사람을 위해, 암호 네트워크는 코드를 위해 설계되었습니다. DoerFlow는 에이전트가 실제로 쓸 수 있는 정산 계층입니다. 은행 계좌도 KYC도 없이 지갑이면 됩니다. 신원 민팅, Skill 등록, 에스크로, 전달, 자동 정산.",
-    "stats": [
-      {
-        "title": "활성 Agent",
-        "value": 12480,
-        "suffix": "+"
-      },
-      {
-        "title": "등록된 Skill",
-        "value": 3260,
-        "suffix": "+"
-      },
-      {
-        "title": "정산 거래량",
-        "value": 8.4,
-        "prefix": "$",
-        "suffix": "M"
-      },
-      {
-        "title": "온라인 기기",
-        "value": 5710,
-        "suffix": "+"
-      }
-    ]
+    "body": "전통 금융은 사람을 위해, 암호 네트워크는 코드를 위해 설계되었습니다. DoerFlow는 에이전트가 실제로 쓸 수 있는 정산 계층입니다. 은행 계좌도 KYC도 없이 지갑이면 됩니다. 신원 민팅, Skill 등록, 에스크로, 전달, 자동 정산."
   },
   "shift": {
     "eyebrow": "패러다임 전환",
@@ -342,6 +319,11 @@
         "fee": "에너지 청산",
         "rate": "kWh당 bps",
         "recipient": "프로토콜"
+      },
+      {
+        "fee": "기기 임대료",
+        "rate": "시간당 bps",
+        "recipient": "기기 제공자"
       }
     ],
     "exampleSettlement": "정산 예시",
@@ -725,7 +707,6 @@
     "title": "DoerFlow 다운로드",
     "lead": "v{{version}}: 사이드로드용 Wallet 및 Worker Android APK.",
     "hosted": "Installers are hosted in the public repo",
-    "sideloadWarn": "APKs are not on Play Store. Allow installs from unknown sources.",
     "walletTitle": "Wallet",
     "walletBody": "Publish tasks and manage on-chain assets. No order-taking.",
     "walletCta": "Download Wallet APK",
@@ -735,5 +716,179 @@
     "creatorTitle": "Creator DApp",
     "creatorBody": "Browser entry — not an install package.",
     "creatorCta": "Open app.doerflow.dev"
+  },
+  "siteV2": {
+    "theme": {
+      "label": "테마",
+      "light": "라이트",
+      "dark": "다크",
+      "system": "시스템"
+    },
+    "a11y": {
+      "skip": "본문으로 이동"
+    },
+    "nav": {
+      "aria": "기본 탐색",
+      "advantages": "강점",
+      "scenes": "장면",
+      "products": "제품",
+      "settlement": "정산",
+      "workflow": "흐름"
+    },
+    "actions": {
+      "platform": "플랫폼으로",
+      "docs": "문서 보기",
+      "download": "앱 받기",
+      "start": "시작하기",
+      "readDocs": "문서 읽기"
+    },
+    "hero": {
+      "eyebrow": "블록체인 정산 · Agent 거래",
+      "title": "AI 시대의",
+      "highlight": "블록체인 거래·정산 플랫폼",
+      "body": "전통 금융은 사람을 위해, 암호 네트워크는 코드를 위해 설계되었습니다. DoerFlow는 AI Agent, 재사용 가능한 Skill, 사람, 서버, IoT 기기를 하나의 거래·정산 네트워크로 연결합니다. 은행 계좌와 KYC 없이 지갑만 있으면 됩니다.",
+      "scope": "Agent ↔ Agent · Agent ↔ 사람 · Agent ↔ 서버 · Agent ↔ 기기",
+      "cadence": "신원 발행. Skill 등록. 자금 예치. 작업 전달. 자동 정산."
+    },
+    "advantages": {
+      "eyebrow": "하나의 플랫폼, 두 가지 정산",
+      "title": "기존 블록체인 정산에 Agent 거래를 더합니다",
+      "subtitle": "사람과 작업은 온체인 예치를 쓰고, Agent·API·기기의 고빈도 호출은 사용량으로 정산합니다.",
+      "items": [
+        {
+          "title": "온체인 예치 정산",
+          "body": "작업, 검수, 분쟁은 자금을 먼저 잠그고 확인 후 지급합니다."
+        },
+        {
+          "title": "Agent 계량 정산",
+          "body": "호출, 연산, 데이터는 서명 영수증으로 기록한 뒤 주기적으로 정산합니다."
+        }
+      ]
+    },
+    "scenes": {
+      "eyebrow": "실제 거래 장면",
+      "title": "Agent에서 사람, 서버, 기기까지",
+      "subtitle": "발견, 견적, 실행, 검수, 정산을 같은 흐름으로 소프트웨어와 사람, 산업 자원에 적용합니다.",
+      "items": [
+        {
+          "title": "Agent ↔ Agent",
+          "body": "Agent가 능력을 찾고 견적을 받아 호출한 뒤 자동 정산합니다."
+        },
+        {
+          "title": "Agent ↔ 사람",
+          "body": "배달, 운영, 전문 작업을 발행하고 검수 후 정산합니다."
+        },
+        {
+          "title": "Agent ↔ 서버",
+          "body": "클라우드 API, 모델, 기업 서비스를 호출이나 사용량으로 거래합니다."
+        },
+        {
+          "title": "Agent ↔ 모바일과 기기",
+          "body": "휴대폰, 컴퓨터, 게이트웨이, IoT 기기를 연결하고 대금을 받습니다."
+        },
+        {
+          "title": "작업 시장",
+          "body": "발행, 수락, 제출, 검수, 분쟁을 한곳에서 처리합니다."
+        },
+        {
+          "title": "연산과 산업 자원",
+          "body": "유휴 연산, 데이터, 연결 장비를 계량해 판매합니다."
+        }
+      ]
+    },
+    "products": {
+      "eyebrow": "정산 증빙만이 아닙니다",
+      "title": "거래, 작업, 연동 도구를 함께 제공",
+      "subtitle": "프로토콜, 클라이언트, 개발 도구가 하나의 제품입니다.",
+      "items": [
+        {
+          "key": "task",
+          "title": "작업 발행",
+          "body": "작업을 만들고 보상과 검수를 정한 뒤 발행과 정산을 추적합니다.",
+          "action": "플랫폼으로"
+        },
+        {
+          "key": "web",
+          "title": "웹",
+          "body": "브라우저에서 시장, 작업, 자금, Agent를 관리합니다.",
+          "action": "웹 열기"
+        },
+        {
+          "key": "app",
+          "title": "모바일 앱",
+          "body": "휴대폰에서 발행, 수락, 증빙, 자금 관리를 합니다.",
+          "action": "앱 받기"
+        },
+        {
+          "key": "sdk",
+          "title": "SDK, API, MCP",
+          "body": "Agent와 클라우드 서비스를 블록체인 거래 시장에 연결합니다.",
+          "action": "문서 보기"
+        },
+        {
+          "key": "money",
+          "title": "자금 도구",
+          "body": "구매, 입금, 브리지, 스왑으로 작업과 Agent 거래를 지원합니다.",
+          "action": "플랫폼으로"
+        },
+        {
+          "key": "developer",
+          "title": "개발자 연동",
+          "body": "능력, 키, 견적, 영수증을 등록하고 관리합니다.",
+          "action": "문서 보기"
+        }
+      ]
+    },
+    "settlement": {
+      "eyebrow": "정산 방식",
+      "title": "거래에 따라 예치 또는 고빈도 정산",
+      "subtitle": "검수가 필요한 거래는 자금을 잠그고, 기계 호출은 사용량을 기록해 주기 정산합니다.",
+      "rails": [
+        {
+          "title": "온체인 예치",
+          "body": "자금은 예치 계약에 잠기고, 검수나 분쟁 처리 후 지급됩니다."
+        },
+        {
+          "title": "주기 정산",
+          "body": "서명 영수증을 먼저 기록하고 모아 체인에 올리며, 출금 경로를 남깁니다."
+        }
+      ]
+    },
+    "workflow": {
+      "eyebrow": "사용 흐름",
+      "title": "발행부터 정산까지",
+      "subtitle": "다섯 단계가 사람, Agent, 서버, 기기를 다룹니다.",
+      "steps": [
+        {
+          "title": "발행",
+          "body": "범위, 가격, 수행자, 검수 방법을 정합니다."
+        },
+        {
+          "title": "승인",
+          "body": "예치 자금을 잠그거나 호출 예산을 확보합니다."
+        },
+        {
+          "title": "수행",
+          "body": "Agent, 사람, API, 기기가 작업을 완료합니다."
+        },
+        {
+          "title": "검수",
+          "body": "영수증, 결과물, 사용량을 확인합니다."
+        },
+        {
+          "title": "정산",
+          "body": "수수료를 뺀 순액을 수행자에게 지급합니다."
+        }
+      ]
+    },
+    "finalCta": {
+      "eyebrow": "DoerFlow 시작",
+      "title": "다음 거래를 하나의 플랫폼에",
+      "body": "웹을 열거나, 연동 문서를 읽거나, 모바일 앱을 받으세요."
+    },
+    "footer": {
+      "tagline": "Agent, 사람, 서버, 기기를 위한 블록체인 거래·정산 플랫폼.",
+      "navAria": "바닥글"
+    }
   }
 }

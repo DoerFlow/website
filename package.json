@@ -7,8 +7,9 @@
     "dev": "next dev --port 13010",
     "build": "node scripts/build.mjs",
     "start": "next start --port 13010",
-    "check": "biome check .",
-    "format": "biome check --write ."
+    "check": "biome lint .",
+    "format": "biome check --write .",
+    "test": "node --test tests/site-contract.test.mjs"
   },
   "dependencies": {
     "@ant-design/icons": "^6.3.4",

@@ -8,6 +8,7 @@ import nl from "./nl.json"
 import pt from "./pt.json"
 import zhCN from "./zh-CN.json"
 import zhTW from "./zh-TW.json"
+import fr from "./fr.json"
 
 export type Messages = typeof en
 
@@ -21,4 +22,5 @@ export const messagesByLocale: Record<Locale, Messages> = {
   it,
   ja,
   ko,
+  fr,
 }

@@ -1,17 +1,17 @@
 "use client"
 
-import { Row, Col, Card, Tag, Typography, Button } from "antd"
-import {
-  WalletOutlined,
-  SolutionOutlined,
-  DeploymentUnitOutlined,
-  ControlOutlined,
-  ArrowRightOutlined,
-  CheckOutlined,
-} from "@ant-design/icons"
-import { SectionHeading, Reveal } from "@/components/site/section-heading"
+import { Reveal, SectionHeading } from "@/components/site/section-heading"
 import { useT } from "@/lib/i18n/context"
 import { COLORS } from "@/lib/theme"
+import {
+  ArrowRightOutlined,
+  CheckOutlined,
+  ControlOutlined,
+  DeploymentUnitOutlined,
+  SolutionOutlined,
+  WalletOutlined,
+} from "@ant-design/icons"
+import { Button, Card, Col, Row, Tag, Typography } from "antd"
 
 const { Title, Text } = Typography
 
@@ -24,10 +24,13 @@ const PRODUCT_META = [
 
 export function Products() {
   const { t, tm } = useT()
-  const items = tm<Array<{ name: string; stack: string; persona: string; features: string[] }>>("products.items")
+  const items =
+    tm<Array<{ name: string; stack: string; persona: string; features: string[] }>>(
+      "products.items",
+    )
 
   return (
-    <section id="products" className="df-anchor df-section">
+    <section id="apps" className="df-anchor df-section">
       <SectionHeading
         eyebrow={t("products.eyebrow")}
         title={t("products.title")}
@@ -68,24 +71,43 @@ export function Products() {
                       <Title level={4} style={{ margin: 0, color: COLORS.text }}>
                         {p.name}
                       </Title>
-                      <Tag style={{ marginTop: 4, background: "rgba(255,255,255,0.04)", borderColor: COLORS.border, color: COLORS.muted }}>
+                      <Tag
+                        style={{
+                          marginTop: 4,
+                          background: "rgba(255,255,255,0.04)",
+                          borderColor: COLORS.border,
+                          color: COLORS.muted,
+                        }}
+                      >
                         {p.stack}
                       </Tag>
                     </div>
                   </div>
-                  <Text style={{ color: meta.accent, fontWeight: 600, fontSize: 13 }}>{p.persona}</Text>
+                  <Text style={{ color: meta.accent, fontWeight: 600, fontSize: 13 }}>
+                    {p.persona}
+                  </Text>
                   <ul style={{ listStyle: "none", padding: 0, margin: "16px 0 0" }}>
                     {p.features.map((f) => (
                       <li
                         key={f}
-                        style={{ display: "flex", gap: 10, alignItems: "flex-start", marginBottom: 10 }}
+                        style={{
+                          display: "flex",
+                          gap: 10,
+                          alignItems: "flex-start",
+                          marginBottom: 10,
+                        }}
                       >
                         <CheckOutlined style={{ color: meta.accent, fontSize: 13, marginTop: 4 }} />
                         <Text style={{ color: COLORS.muted }}>{f}</Text>
                       </li>
                     ))}
                   </ul>
-                  <Button type="link" style={{ paddingLeft: 0, color: meta.accent }} icon={<ArrowRightOutlined />} iconPlacement="end">
+                  <Button
+                    type="link"
+                    style={{ paddingLeft: 0, color: meta.accent }}
+                    icon={<ArrowRightOutlined />}
+                    iconPlacement="end"
+                  >
                     {t("common.learnMore")}
                   </Button>
                 </Card>

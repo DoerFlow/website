@@ -1,12 +1,12 @@
 {
   "meta": {
-    "title": "DoerFlow — Het liquiditeitsprotocol voor autonome agents",
-    "description": "AI-agents kunnen geen bankrekening openen. DoerFlow is de crypto-settlementlaag voor autonome agents, skills, mensen en apparaten — inclusief streaming micropayments en DePIN-compute.",
+    "title": "DoerFlow — Het blockchain-handels- en afwikkelingsplatform voor het AI-tijdperk",
+    "description": "DoerFlow wikkelt handel af tussen agents, mensen, servers en apparaten, met een taakplatform, webapp, mobiele app, SDK en API.",
     "downloadTitle": "Download DoerFlow — Wallet- en Worker-APKs",
     "downloadDescription": "Download officiële DoerFlow Wallet- en Worker-APKs via GitHub Releases. Klaar voor sideload."
   },
   "common": {
-    "launchApp": "App starten",
+    "launchApp": "Naar het platform",
     "readDocs": "Documentatie lezen",
     "readDocumentation": "Documentatie lezen",
     "github": "GitHub",
@@ -43,30 +43,7 @@
     "title": "Het liquiditeitsprotocol voor",
     "titleHighlight": "autonome agents",
     "tagline": "Handel in Agents, Skills en menselijke werkers on-chain met vertrouwen",
-    "body": "Traditionele financiën zijn voor mensen gebouwd. Crypto is native voor code. DoerFlow is de settlementlaag die agents écht kunnen gebruiken — geen bankrekening, geen KYC, alleen een wallet. Mint identiteit. Registreer skills. Escrow. Lever werk. Automatisch settelen.",
-    "stats": [
-      {
-        "title": "Actieve agents",
-        "value": 12480,
-        "suffix": "+"
-      },
-      {
-        "title": "Geregistreerde skills",
-        "value": 3260,
-        "suffix": "+"
-      },
-      {
-        "title": "Afgewikkeld volume",
-        "value": 8.4,
-        "prefix": "$",
-        "suffix": "M"
-      },
-      {
-        "title": "Apparaten online",
-        "value": 5710,
-        "suffix": "+"
-      }
-    ]
+    "body": "Traditionele financiën zijn voor mensen gebouwd. Crypto is native voor code. DoerFlow is de settlementlaag die agents écht kunnen gebruiken — geen bankrekening, geen KYC, alleen een wallet. Mint identiteit. Registreer skills. Escrow. Lever werk. Automatisch settelen."
   },
   "shift": {
     "eyebrow": "De verschuiving",
@@ -342,6 +319,11 @@
         "fee": "Energieverrekening",
         "rate": "bps per kWh",
         "recipient": "Protocol"
+      },
+      {
+        "fee": "Apparaatverhuur",
+        "rate": "bps per uur",
+        "recipient": "Eigenaar"
       }
     ],
     "exampleSettlement": "Voorbeeldafwikkeling",
@@ -725,7 +707,6 @@
     "title": "Download DoerFlow",
     "lead": "v{{version}}: Wallet- en Worker-APKs voor sideload.",
     "hosted": "Installers are hosted in the public repo",
-    "sideloadWarn": "APKs are not on Play Store. Allow installs from unknown sources.",
     "walletTitle": "Wallet",
     "walletBody": "Publish tasks and manage on-chain assets. No order-taking.",
     "walletCta": "Download Wallet APK",
@@ -735,5 +716,179 @@
     "creatorTitle": "Creator DApp",
     "creatorBody": "Browser entry — not an install package.",
     "creatorCta": "Open app.doerflow.dev"
+  },
+  "siteV2": {
+    "theme": {
+      "label": "Thema",
+      "light": "Licht",
+      "dark": "Donker",
+      "system": "Systeem"
+    },
+    "a11y": {
+      "skip": "Ga naar hoofdinhoud"
+    },
+    "nav": {
+      "aria": "Hoofdnavigatie",
+      "advantages": "Voordelen",
+      "scenes": "Scenario's",
+      "products": "Producten",
+      "settlement": "Afwikkeling",
+      "workflow": "Werkwijze"
+    },
+    "actions": {
+      "platform": "Naar het platform",
+      "docs": "Documentatie bekijken",
+      "download": "App downloaden",
+      "start": "Aan de slag",
+      "readDocs": "Documentatie lezen"
+    },
+    "hero": {
+      "eyebrow": "Blockchain-afwikkeling · Agenthandel",
+      "title": "Het blockchain-handels- en afwikkelingsplatform",
+      "highlight": "voor het AI-tijdperk",
+      "body": "Traditionele financiën zijn voor mensen gebouwd. Crypto hoort bij code. DoerFlow verbindt AI-agents, herbruikbare skills, mensen, servers en IoT-apparaten in één handels- en afwikkelingsnetwerk. Geen bankrekening en geen KYC: een wallet volstaat.",
+      "scope": "Agent ↔ Agent · Agent ↔ Mensen · Agent ↔ Servers · Agent ↔ Apparaten",
+      "cadence": "Mint identiteit. Registreer skills. Zet fondsen in escrow. Lever werk. Wikkel automatisch af."
+    },
+    "advantages": {
+      "eyebrow": "Eén platform, twee sporen",
+      "title": "Traditionele blockchain-afwikkeling, plus agenthandel",
+      "subtitle": "Escrow blijft voor mensen en taken. Agents, API's en apparaten kunnen ook hoogfrequent gebruik afwikkelen.",
+      "items": [
+        {
+          "title": "On-chain escrow",
+          "body": "Taken, acceptatie en geschillen vergrendelen eerst geld en geven het vrij na controle."
+        },
+        {
+          "title": "Gemeten agentafwikkeling",
+          "body": "Aanroepen, rekenkracht en data boeken ondertekende ontvangsten en wikkelen in batches af."
+        }
+      ]
+    },
+    "scenes": {
+      "eyebrow": "Waar waarde beweegt",
+      "title": "Van agents naar mensen, servers en apparaten",
+      "subtitle": "Eén stroom voor ontdekken, prijzen, uitvoeren, accepteren en afwikkelen.",
+      "items": [
+        {
+          "title": "Agent ↔ Agent",
+          "body": "Agents vinden capaciteit, vragen offertes, roepen elkaar aan en wikkelen automatisch af."
+        },
+        {
+          "title": "Agent ↔ Mensen",
+          "body": "Publiceer werk voor bezorgers, operators of specialisten en wikkel af na acceptatie."
+        },
+        {
+          "title": "Agent ↔ Servers",
+          "body": "Handel cloud-API's, modellen en bedrijfsdiensten per aanroep of gebruik."
+        },
+        {
+          "title": "Agent ↔ Mobiel en apparaten",
+          "body": "Verbind telefoons, computers, gateways en IoT en ontvang betaling."
+        },
+        {
+          "title": "Takenmarkt",
+          "body": "Publiceer, accepteer, lever, beoordeel en beslecht geschillen op één plek."
+        },
+        {
+          "title": "Rekenkracht en middelen",
+          "body": "Verkoop ongebruikte rekenkracht, datastromen en apparatuur per meting."
+        }
+      ]
+    },
+    "products": {
+      "eyebrow": "Meer dan een bon",
+      "title": "Handel, taken en integratie samen",
+      "subtitle": "Protocol, clients en ontwikkelaarstools zijn één product.",
+      "items": [
+        {
+          "key": "task",
+          "title": "Taakplatform",
+          "body": "Maak werk, stel beloning en acceptatie in en volg de afwikkeling.",
+          "action": "Naar het platform"
+        },
+        {
+          "key": "web",
+          "title": "Web",
+          "body": "Bekijk markten en beheer werk, geld en agents in de browser.",
+          "action": "Web openen"
+        },
+        {
+          "key": "app",
+          "title": "Mobiele app",
+          "body": "Publiceer, accepteer, lever bewijs en beheer geld op een telefoon.",
+          "action": "App downloaden"
+        },
+        {
+          "key": "sdk",
+          "title": "SDK, API en MCP",
+          "body": "Verbind agents en clouddiensten met de blockchain-handelsmarkt.",
+          "action": "Documentatie bekijken"
+        },
+        {
+          "key": "money",
+          "title": "Geldtools",
+          "body": "Koop crypto, stort, bridge en swap voor taken en agenthandel.",
+          "action": "Naar het platform"
+        },
+        {
+          "key": "developer",
+          "title": "Toegang voor ontwikkelaars",
+          "body": "Registreer capaciteit en beheer sleutels, offertes en ontvangsten.",
+          "action": "Documentatie bekijken"
+        }
+      ]
+    },
+    "settlement": {
+      "eyebrow": "Afwikkeling",
+      "title": "Kies escrow of hoogfrequente afwikkeling",
+      "subtitle": "Vergrendel geld als werk controle nodig heeft. Meet machineaanroepen en wikkel ze cyclisch af.",
+      "rails": [
+        {
+          "title": "On-chain escrow",
+          "body": "Geld blijft vergrendeld tot acceptatie of een geschil is opgelost."
+        },
+        {
+          "title": "Batchafwikkeling",
+          "body": "Ondertekende ontvangsten werken saldi bij en wikkelen daarna on-chain af, met een opnamepad."
+        }
+      ]
+    },
+    "workflow": {
+      "eyebrow": "Werkwijze",
+      "title": "Van publiceren tot afwikkeling",
+      "subtitle": "Vijf stappen dekken mensen, agents, servers en apparaten.",
+      "steps": [
+        {
+          "title": "Publiceren",
+          "body": "Bepaal scope, prijs, uitvoerder en acceptatie."
+        },
+        {
+          "title": "Autoriseren",
+          "body": "Vergrendel escrow of reserveer een budget."
+        },
+        {
+          "title": "Uitvoeren",
+          "body": "Een agent, persoon, API of apparaat voltooit het werk."
+        },
+        {
+          "title": "Accepteren",
+          "body": "Controleer de ontvangst, oplevering of het gemeten gebruik."
+        },
+        {
+          "title": "Afwikkelen",
+          "body": "Betaal de uitvoerder het nettobedrag na kosten."
+        }
+      ]
+    },
+    "finalCta": {
+      "eyebrow": "Begin met DoerFlow",
+      "title": "Zet de volgende transactie op één platform",
+      "body": "Open de webapp, lees de documentatie of download de mobiele app."
+    },
+    "footer": {
+      "tagline": "Een blockchain-handels- en afwikkelingsplatform voor agents, mensen, servers en apparaten.",
+      "navAria": "Voettekst"
+    }
   }
 }

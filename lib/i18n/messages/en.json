@@ -1,12 +1,12 @@
 {
   "meta": {
-    "title": "DoerFlow — The Liquidity Protocol for Autonomous Agents",
-    "description": "AI agents cannot open a bank account. DoerFlow is the crypto settlement layer for autonomous agents, skills, humans, and devices — streaming micropayments and DePIN compute included.",
+    "title": "DoerFlow — The blockchain trading and settlement platform for the AI era",
+    "description": "DoerFlow settles trades among agents, people, servers, and devices, with a task platform, web app, mobile app, SDK, and API.",
     "downloadTitle": "Download DoerFlow — Wallet & Worker Android APKs",
     "downloadDescription": "Download official DoerFlow Wallet and Worker Android APKs from GitHub Releases. Sideload-ready builds for the agent labor network."
   },
   "common": {
-    "launchApp": "Launch App",
+    "launchApp": "Enter platform",
     "readDocs": "Read Docs",
     "readDocumentation": "Read Documentation",
     "github": "GitHub",
@@ -43,30 +43,7 @@
     "title": "The Liquidity Protocol for",
     "titleHighlight": "Autonomous Agents",
     "tagline": "Trade Agents, Skills, and human workers on-chain with confidence",
-    "body": "Traditional finance was built for people. Crypto is native to code. DoerFlow is the settlement layer agents can actually use — no bank account, no KYC, just a wallet. Mint identity. Register skills. Escrow funds. Deliver work. Settle automatically.",
-    "stats": [
-      {
-        "title": "Active Agents",
-        "value": 12480,
-        "suffix": "+"
-      },
-      {
-        "title": "Skills Listed",
-        "value": 3260,
-        "suffix": "+"
-      },
-      {
-        "title": "Volume Settled",
-        "value": 8.4,
-        "prefix": "$",
-        "suffix": "M"
-      },
-      {
-        "title": "Devices Online",
-        "value": 5710,
-        "suffix": "+"
-      }
-    ]
+    "body": "Traditional finance was built for people. Crypto is native to code. DoerFlow is the settlement layer agents can actually use — no bank account, no KYC, just a wallet. Mint identity. Register skills. Escrow funds. Deliver work. Settle automatically."
   },
   "shift": {
     "eyebrow": "The Shift",
@@ -192,8 +169,8 @@
   },
   "architecture": {
     "eyebrow": "Protocol Architecture",
-    "title": "Five layers, one",
-    "highlight": "settlement network",
+    "title": "Five layers,",
+    "highlight": "one settlement network",
     "tagline": "Five-layer protocol stack from applications to on-chain settlement",
     "subtitle": "A vertically integrated stack — from user-facing apps down to a purpose-built chain for agent-scale economics.",
     "layers": [
@@ -342,6 +319,11 @@
         "fee": "Energy clearing",
         "rate": "per kWh bps",
         "recipient": "Protocol"
+      },
+      {
+        "fee": "Device rental",
+        "rate": "per-hour bps",
+        "recipient": "Device owner"
       }
     ],
     "exampleSettlement": "Example settlement",
@@ -433,8 +415,8 @@
   },
   "useCases": {
     "eyebrow": "Use Cases",
-    "title": "One protocol, countless",
-    "highlight": "markets",
+    "title": "One protocol,",
+    "highlight": "countless markets",
     "tagline": "One protocol powering countless on-chain markets",
     "subtitle": "From AI marketplaces to autonomous machine economies, DoerFlow settles value wherever agents, humans, and devices meet.",
     "cases": [
@@ -725,7 +707,6 @@
     "title": "Download DoerFlow",
     "lead": "v{{version}}: Wallet and Worker Android APKs for sideload.",
     "hosted": "Installers are hosted in the public repo",
-    "sideloadWarn": "APKs are not on Play Store. Allow installs from unknown sources.",
     "walletTitle": "Wallet",
     "walletBody": "Publish tasks and manage on-chain assets. No order-taking.",
     "walletCta": "Download Wallet APK",
@@ -735,5 +716,179 @@
     "creatorTitle": "Creator DApp",
     "creatorBody": "Browser entry — not an install package.",
     "creatorCta": "Open app.doerflow.dev"
+  },
+  "siteV2": {
+    "theme": {
+      "label": "Theme",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    },
+    "a11y": {
+      "skip": "Skip to main content"
+    },
+    "nav": {
+      "aria": "Primary",
+      "advantages": "Advantages",
+      "scenes": "Scenarios",
+      "products": "Products",
+      "settlement": "Settlement",
+      "workflow": "How it works"
+    },
+    "actions": {
+      "platform": "Enter platform",
+      "docs": "Read the docs",
+      "download": "Download the app",
+      "start": "Get started",
+      "readDocs": "Read the docs"
+    },
+    "hero": {
+      "eyebrow": "Blockchain settlement · Agent trading",
+      "title": "The blockchain trading and settlement platform",
+      "highlight": "for the AI era",
+      "body": "Traditional finance was built for people. Crypto is native to code. DoerFlow connects AI agents, reusable skills, human workers, servers, and IoT devices into one trading and settlement network. No bank account and no KYC — just a wallet.",
+      "scope": "Agent ↔ Agent · Agent ↔ People · Agent ↔ Servers · Agent ↔ Devices",
+      "cadence": "Mint identity. Register skills. Escrow funds. Deliver work. Settle automatically."
+    },
+    "advantages": {
+      "eyebrow": "One platform, two settlement rails",
+      "title": "Traditional blockchain settlement, plus agent trading",
+      "subtitle": "Escrow still serves people and tasks. Agents, APIs, and devices can also settle high-frequency usage.",
+      "items": [
+        {
+          "title": "On-chain escrow",
+          "body": "Tasks, acceptance, and disputes lock funds first and release them after review."
+        },
+        {
+          "title": "Metered agent settlement",
+          "body": "Calls, compute, and data post signed receipts, then settle in batches."
+        }
+      ]
+    },
+    "scenes": {
+      "eyebrow": "Where value moves",
+      "title": "From agents to people, servers, and devices",
+      "subtitle": "One flow for discovery, pricing, execution, acceptance, and settlement.",
+      "items": [
+        {
+          "title": "Agent ↔ Agent",
+          "body": "Agents discover capabilities, request quotes, call each other, and settle automatically."
+        },
+        {
+          "title": "Agent ↔ People",
+          "body": "Publish work for riders, operators, or specialists, then settle after acceptance."
+        },
+        {
+          "title": "Agent ↔ Servers",
+          "body": "Trade cloud APIs, models, and enterprise services by call or usage."
+        },
+        {
+          "title": "Agent ↔ Mobile and devices",
+          "body": "Connect phones, computers, gateways, and IoT devices, then collect payment."
+        },
+        {
+          "title": "Task market",
+          "body": "Publish, accept, deliver, review, and resolve disputes in one place."
+        },
+        {
+          "title": "Compute and industry resources",
+          "body": "Sell idle compute, data streams, and connected equipment by the meter."
+        }
+      ]
+    },
+    "products": {
+      "eyebrow": "More than a receipt",
+      "title": "Trading, tasks, and integration tools together",
+      "subtitle": "The protocol, clients, and developer tools are one product.",
+      "items": [
+        {
+          "key": "task",
+          "title": "Task platform",
+          "body": "Create work, set rewards and acceptance, then follow publishing and settlement.",
+          "action": "Enter platform"
+        },
+        {
+          "key": "web",
+          "title": "Web",
+          "body": "Browse markets, manage work, funds, and agents in the browser.",
+          "action": "Open web"
+        },
+        {
+          "key": "app",
+          "title": "Mobile app",
+          "body": "Publish, accept, submit proof, and manage funds on a phone.",
+          "action": "Download the app"
+        },
+        {
+          "key": "sdk",
+          "title": "SDK, API, and MCP",
+          "body": "Connect agents and cloud services to the blockchain trading market.",
+          "action": "Read the docs"
+        },
+        {
+          "key": "money",
+          "title": "Money tools",
+          "body": "Buy crypto, deposit, bridge, and swap for tasks and agent trades.",
+          "action": "Enter platform"
+        },
+        {
+          "key": "developer",
+          "title": "Developer access",
+          "body": "Register capabilities, manage keys, quotes, and receipts.",
+          "action": "Read the docs"
+        }
+      ]
+    },
+    "settlement": {
+      "eyebrow": "Settlement",
+      "title": "Choose escrow or high-frequency settlement",
+      "subtitle": "Lock funds when work needs review. Meter machine calls and settle them on a cycle.",
+      "rails": [
+        {
+          "title": "On-chain escrow",
+          "body": "Funds stay locked until acceptance or a dispute is resolved."
+        },
+        {
+          "title": "Batched settlement",
+          "body": "Signed receipts update balances first, then settle on-chain, with a withdrawal path."
+        }
+      ]
+    },
+    "workflow": {
+      "eyebrow": "How it works",
+      "title": "From publishing to settlement",
+      "subtitle": "Five steps cover people, agents, servers, and devices.",
+      "steps": [
+        {
+          "title": "Publish",
+          "body": "Define scope, price, executor, and how work is accepted."
+        },
+        {
+          "title": "Authorize",
+          "body": "Lock escrow or reserve a budget for calls."
+        },
+        {
+          "title": "Execute",
+          "body": "An agent, person, API, or device completes the work."
+        },
+        {
+          "title": "Accept",
+          "body": "Check the receipt, delivery, or measured usage."
+        },
+        {
+          "title": "Settle",
+          "body": "Pay the executor the net amount after fees."
+        }
+      ]
+    },
+    "finalCta": {
+      "eyebrow": "Start with DoerFlow",
+      "title": "Put the next trade on one platform",
+      "body": "Open the web app, read the integration docs, or download the mobile app."
+    },
+    "footer": {
+      "tagline": "A blockchain trading and settlement platform for agents, people, servers, and devices.",
+      "navAria": "Footer"
+    }
   }
 }

@@ -1,14 +1,26 @@
 {
-  "root": true,
   "$schema": "https://biomejs.dev/schemas/2.4.16/schema.json",
-  "vcs": { "enabled": true, "clientKind": "git", "useIgnoreFile": true },
-  "formatter": { "enabled": true, "indentStyle": "space", "indentWidth": 2, "lineWidth": 100 },
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 100
+  },
   "linter": {
     "enabled": true,
     "rules": {
       "recommended": true,
-      "correctness": { "noUnusedVariables": "warn" },
-      "suspicious": { "noExplicitAny": "off" }
+      "correctness": {
+        "noUnusedVariables": "warn"
+      },
+      "suspicious": {
+        "noExplicitAny": "off"
+      }
     }
   },
   "javascript": {
@@ -20,6 +32,13 @@
     }
   },
   "files": {
-    "includes": ["**", "!**/node_modules", "!**/.next", "!**/pnpm-lock.yaml"]
+    "include": [
+      "**/*"
+    ],
+    "ignore": [
+      "node_modules",
+      ".next",
+      "pnpm-lock.yaml"
+    ]
   }
 }
